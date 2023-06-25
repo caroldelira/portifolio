@@ -1,0 +1,1 @@
+export { Trabalhos } from './Trabalhos'
