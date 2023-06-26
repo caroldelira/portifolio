@@ -40,6 +40,7 @@ export const H2Pink = styled.h2`
   text-align: center;
   font-size: 45px;
   font-family: 'Ubuntu';
+  font-weight: 300;
   background-image: var(--linear-pink);
   background-clip: text;
   -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
@@ -50,6 +51,7 @@ export const H2Yellow = styled.h2`
   text-align: center;
   font-size: 45px;
   font-family: 'Ubuntu';
+  font-weight: 300;
   background-image: var(--linear-yellow);
   background-clip: text;
   -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
