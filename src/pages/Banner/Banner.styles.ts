@@ -37,24 +37,24 @@ export const H1 = styled.h1`
 `
 
 export const H2Pink = styled.h2`
-text-align: center;
-font-size: 45px;
-font-family: 'Ubuntu';
-background-image: var(--linear-pink);
-background-clip: text;
--webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
--webkit-text-fill-color: transparent;
-color: black;
+  text-align: center;
+  font-size: 45px;
+  font-family: 'Ubuntu';
+  background-image: var(--linear-pink);
+  background-clip: text;
+  -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+  -webkit-text-fill-color: transparent;
+  color: black;
 `
 export const H2Yellow = styled.h2`
-text-align: center;
-font-size: 45px;
-font-family: 'Ubuntu';
-background-image: var(--linear-yellow);
-background-clip: text;
--webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
--webkit-text-fill-color: transparent;
-color: black;
+  text-align: center;
+  font-size: 45px;
+  font-family: 'Ubuntu';
+  background-image: var(--linear-yellow);
+  background-clip: text;
+  -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+  -webkit-text-fill-color: transparent;
+  color: black;
 `
 
 export const ArrowUp = styled.img`

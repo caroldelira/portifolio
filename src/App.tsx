@@ -12,9 +12,9 @@ export function App() {
   return (
     <>
       <Banner />
+      <Sobre />
       <Contatos />
       <Footer />
-      <Sobre />
       <Trabalhos />
       <GlobalStyles />
     </>
