@@ -40,7 +40,7 @@ body, input, textarea, button {
   font-size: 1rem; 
 }
 
-h1 {
+h1, h3 {
   font-family: 'Viga', sans-serif;
 }
 `
