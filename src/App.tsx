@@ -13,9 +13,9 @@ export function App() {
     <>
       <Banner />
       <Sobre />
+      <Trabalhos />
       <Contatos />
       <Footer />
-      <Trabalhos />
       <GlobalStyles />
     </>
   );

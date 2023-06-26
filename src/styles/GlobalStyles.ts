@@ -24,7 +24,7 @@ export default createGlobalStyle`
   --linear-pink:
       linear-gradient(270deg, #7F26C6 -16.78%, #AB19AE 41.99%, #F40386 100%);
   --linear-yellow:
-      linear-gradient(90deg, #FE564A -121.49%, #FC853C -5.06%, #F9C42A 121.49%);  
+      linear-gradient(90deg, #FE564A -161.49%, #FC853C -1.06%, #F9C42A 90.49%);  
 }
 
 body {
