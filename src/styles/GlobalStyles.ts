@@ -31,12 +31,16 @@ body {
   background: var(--gray-900);
   color: var(--white);
   -webkit-font-smoothing: antialiased;
-  padding: 100px;
+  padding: 50px;
 }
 
 body, input, textarea, button {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   font-size: 1rem; 
+}
+
+h1 {
+  font-family: 'Viga', sans-serif;
 }
 `
