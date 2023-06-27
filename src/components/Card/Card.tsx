@@ -1,6 +1,6 @@
-import React from "react"
+import React from 'react';
 
-import * as Styled from './Card.styles'
+import * as Styled from './Card.styles';
 
 interface CardProps {
   imageCard: string;
@@ -10,34 +10,46 @@ interface CardProps {
   desc: string;
   tecnology: string[];
   descTec: string[];
+  link: string;
+  color: 'blue' | 'green' | 'yellow' | 'pink' | 'orange';
+  design?: boolean;
+  descDesign?: string;
 }
 
-export function Card({imageCard, imageLogo, titulo, redeSocial, desc, descTec, tecnology}: CardProps) {
+export function Card({
+  imageCard,
+  imageLogo,
+  titulo,
+  redeSocial,
+  desc,
+  descTec,
+  tecnology,
+  link,
+  color,
+  design,
+  descDesign,
+}: CardProps) {
   return (
-    <Styled.Container>
-      <Styled.ImageContainer>
-        <Styled.ImageCard>
+    <Styled.Container color={color}>
+      <Styled.ImageContainer color={color}>
+        <Styled.ImageCard color={color}>
           <img src={imageCard} alt="" />
         </Styled.ImageCard>
-        <Styled.imageLogos>
-        {imageLogo.map((logo, index) => (
+        <Styled.imageLogos color={color}>
+          {imageLogo.map((logo, index) => (
             <img key={index} src={logo} alt="" />
           ))}
         </Styled.imageLogos>
       </Styled.ImageContainer>
-      <Styled.TextContainer>
+      <Styled.TextContainer color={color}>
         <h4>
-          {titulo} <Styled.Link href="#">(Acessar {redeSocial})</Styled.Link>
+          {titulo}{' '}
+          <Styled.Link color={color} href={link} target="_blank">
+            (Acessar {redeSocial})
+          </Styled.Link>
         </h4>
-        <p>
-        Descrição:
-        </p>
-        <p>
-        {desc}
-        </p>
-        <p>
-        Tecnologias utilizadas:
-        </p>
+        <p>{desc}</p>
+        <p>Tecnologias utilizadas:</p>
         <ul>
           {tecnology.map((tech, index) => (
             <li key={index}>
@@ -46,7 +58,15 @@ export function Card({imageCard, imageLogo, titulo, redeSocial, desc, descTec, t
             </li>
           ))}
         </ul>
+        {design ? (
+          <>
+            <p>Funcionalidades:</p>
+            <ul>
+              <Styled.li color={color}>{descDesign}</Styled.li>
+            </ul>
+          </>
+        ) : null}
       </Styled.TextContainer>
     </Styled.Container>
-  )
+  );
 }

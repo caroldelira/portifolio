@@ -1,6 +1,18 @@
 import styled from "styled-components"
 
-export const Container = styled.div`
+interface CardProps {
+  color: 'blue' | 'green' | 'yellow' | 'pink' | 'orange'
+}
+
+const colors = {
+  blue: 'var(--blue)',
+  green: 'var(--green)',
+  yellow: 'var(--yellow)',
+  pink: 'var(--pink)',
+  orange: 'var(--orange)'
+}
+
+export const Container = styled.div<CardProps>`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -8,30 +20,38 @@ export const Container = styled.div`
   position: relative;
 
   width: 1100px;
-  height: 500px;
+  height: 450px;
 
   margin: 80px auto;
 
-  border: 1px solid var(--green);
+  border: 1px solid ${(({color}) => colors[color])};
   border-radius: 10px;
+
+  transition: box-shadow 0.5s ease;
+
+  &:hover {
+    box-shadow: 0 0 10px ${(({ color }) => colors[color])};
+    background: rgba(0, 0, 0, 0.07);
+  }
 `
-export const ImageContainer = styled.div`
+export const ImageContainer = styled.div<CardProps>`
   display: flex;
   flex-direction: column;
+  margin-left: 30px;
   width: 50%;
   position: relative;
 `
 
-export const ImageCard = styled.div`
+export const ImageCard = styled.div<CardProps>`
   width: 100%;
   padding: 20px;
 
   & img {
-    width: 100%;
+    width: 80%;
   }
 `
 
-export const imageLogos = styled.div`
+export const imageLogos = styled.div<CardProps>`
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -40,9 +60,15 @@ export const imageLogos = styled.div`
     width: 30px;
     height: auto;
     margin-left: 20px;
+
+    transition: transform 0.8s ease;
+
+    &:hover {
+      transform: scale(1.3) rotate(360deg);
+    }
   }
 `
-export const TextContainer = styled.div`
+export const TextContainer = styled.div<CardProps>`
   display: flex;
   flex-direction: column;
 
@@ -54,7 +80,7 @@ export const TextContainer = styled.div`
   position: relative;
 
   & h4 {
-    color: var(--green);
+    color: ${(({color}) => colors[color])};
     font-size: 24px;
   }
 
@@ -67,14 +93,18 @@ export const TextContainer = styled.div`
   }
 
   & span {
-    color: var(--green);
+    color: ${(({color}) => colors[color])};
   }
 `
-export const Link = styled.a`
+export const Link = styled.a<CardProps>`
   text-decoration: none;
-  color: var(--green);
+  color: ${(({ color }) => colors[color])};
+  
+  &:hover {
+    text-decoration: underline;
+  }
 `
 
-export const P = styled.p`
-  
+export const li = styled.li<CardProps>`
+  color: ${(({color}) => colors[color])};
 `

@@ -11,7 +11,9 @@ export const Button = styled.button`
   padding: 10px;
   margin-top: 20px;
 
+  transition: background 0.5s ease-out;
+
   &:hover{
-    background: var(--linear-pink);
+    background: var(--pink);
   }
 `

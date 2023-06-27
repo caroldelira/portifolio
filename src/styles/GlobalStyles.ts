@@ -20,11 +20,11 @@ export default createGlobalStyle`
   --green: #0ACC66;
   
   --linear-blue:
-      linear-gradient(90deg, #0081EF 0%, #009EE8 53.64%, #00D5DA 109.61%);
+      linear-gradient(140deg, #0081EF 0%, #009EE8 38%, #00D5DA 70%);
   --linear-pink:
       linear-gradient(270deg, #7F26C6 -16.78%, #AB19AE 41.99%, #F40386 100%);
   --linear-yellow:
-      linear-gradient(90deg, #FE564A -161.49%, #FC853C -1.06%, #F9C42A 90.49%);  
+      linear-gradient(140deg, #FE564A 30%, #fb8f39 50%, #F9C42A 70%);  
 }
 
 body {
