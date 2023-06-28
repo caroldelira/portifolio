@@ -7,7 +7,7 @@ import * as Styled from './Contatos.styles';
 
 export function Contatos() {
   return (
-    <Styled.Container>
+    <Styled.Container id="VerMaisTrabalhos">
       <p>Ver mais trabalhos e Projetos</p>
       <Styled.ContatoContainer>
         <Styled.RedeSocial

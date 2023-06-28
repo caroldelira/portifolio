@@ -13,7 +13,7 @@ export const BG = styled.img`
 
 export const H3 = styled.h3`
   text-align: center;
-  font-size: 40px;
+  font-size: 35px;
   background-image: var(--linear-pink);
   background-clip: text;
   -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
@@ -22,7 +22,7 @@ export const H3 = styled.h3`
 `
 export const H3S = styled.h3`
   text-align: center;
-  font-size: 40px;
+  font-size: 35px;
   background-image: var(--linear-yellow);
   background-clip: text;
   -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */

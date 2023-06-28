@@ -9,7 +9,7 @@ import * as Styled from './Footer.styles';
 
 export function Footer() {
   return (
-    <Styled.Container>
+    <Styled.Container id="Contatos">
       <div>
         <img src={arrow} alt="" />
       </div>

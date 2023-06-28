@@ -13,7 +13,7 @@ export function Banner() {
         <img
           src={imgBanner}
           alt="Imagem de uma mulher em uma moldura quadrada com as bordas arredondadas com cores laranja e azul por trás"
-        />   
+        />
       </Styled.ImgContainer>
       <Styled.ContentContainer>
         <Styled.H1>Carol de Lira</Styled.H1>
@@ -21,9 +21,9 @@ export function Banner() {
         <Styled.H2Yellow>Designer UX/UI</Styled.H2Yellow>
         <Styled.ArrowUp src={arrowBanner} alt="traço cinza" />
         <Styled.ContentButton>
-          <Button label='Veja meus trabalhos' />
+          <Button label="Veja meus trabalhos" targetId="PaginaTrabalhos" />
         </Styled.ContentButton>
       </Styled.ContentContainer>
     </Styled.Container>
-  )
+  );
 }

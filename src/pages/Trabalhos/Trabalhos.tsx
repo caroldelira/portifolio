@@ -9,13 +9,13 @@ import * as Styled from './Trabalhos.styles';
 
 export function Trabalhos() {
   return (
-    <Styled.Container>
+    <Styled.Container id="PaginaTrabalhos">
       <Styled.BG src={arrowBG} alt="" />
       <Styled.Content>
-        <Styled.H3>Desenvolvimento Web</Styled.H3>
+        <Styled.H3 id="DesenvolvimentoWeb">Desenvolvimento Web</Styled.H3>
         <ProjetoCapsula />
         <ProjetoCronometro />
-        <Styled.H3S>Design UX/UI</Styled.H3S>
+        <Styled.H3S id="DesignUXUI">Design UX/UI</Styled.H3S>
         <ProjetoEcommerce />
         <ProjetoOrganizi />
       </Styled.Content>

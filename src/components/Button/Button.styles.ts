@@ -15,5 +15,6 @@ export const Button = styled.button`
 
   &:hover{
     background: var(--pink);
+    cursor: pointer;
   }
 `

@@ -4,13 +4,17 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 650px;
+  height: 600px;
 `
 export const ImgContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 50%;
+
+  img{
+    width: 800px;
+  }
  `
 export const ContentContainer = styled.div`
   display: flex;
@@ -21,7 +25,7 @@ export const ContentContainer = styled.div`
 
 export const H1 = styled.h1`
   text-align: center;
-  font-size: 70px;
+  font-size: 60px;
   /* Primeiro passo: definir um degradê como fundo */
   background-image: var(--linear-blue);
   
@@ -38,7 +42,7 @@ export const H1 = styled.h1`
 
 export const H2Pink = styled.h2`
   text-align: center;
-  font-size: 45px;
+  font-size: 40px;
   font-family: 'Ubuntu';
   font-weight: 300;
   background-image: var(--linear-pink);
@@ -49,7 +53,7 @@ export const H2Pink = styled.h2`
 `
 export const H2Yellow = styled.h2`
   text-align: center;
-  font-size: 45px;
+  font-size: 40px;
   font-family: 'Ubuntu';
   font-weight: 300;
   background-image: var(--linear-yellow);
