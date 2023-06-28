@@ -21,9 +21,9 @@ export const RedeSocial = styled.a`
   flex-direction: column;
   width: 120px;
   margin: 0 30px;
-  text-decoration: none;
   color: var(--white);
-  cursor: pointer;
+  z-index: 100;
+  text-decoration: none;
 
   span {
     font-size: 14px;
