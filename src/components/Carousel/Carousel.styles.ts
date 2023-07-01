@@ -7,7 +7,7 @@ export const Container = styled.div`
   justify-content: center;
 
    & button {
-    margin-top: -60px;
+    margin-top: -20px;
   }
   
 `;
