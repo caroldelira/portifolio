@@ -22,16 +22,5 @@ export const ListaLink = styled.ul`
   gap: 20px;
   font-size: 14px;
 
-  a {
-    text-decoration: none;
-    color: var(--white);
-
-    transition: color 0.1s linear;
-
-    &:hover {
-      cursor: pointer;
-      color: var(--blue);
-    }
-  }
-  
+  z-index: 100;
 `

@@ -7,9 +7,7 @@ export const Container = styled.div`
 
   position: relative;
 `
-export const BG = styled.img`
-
-`
+export const BG = styled.img``
 
 export const H3 = styled.h3`
   text-align: center;
@@ -28,6 +26,8 @@ export const H3S = styled.h3`
   -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
   -webkit-text-fill-color: transparent;
   color: black;
+
+  margin-top: 40px;
 `
 export const Content = styled.div`
   width: 1200px;

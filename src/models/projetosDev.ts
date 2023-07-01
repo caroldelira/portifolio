@@ -7,7 +7,10 @@ import react from '../image/logos/react.svg';
 import imgCard2 from '../image/projetoPomodoro.png';
 import sc from '../image/logos/sc.svg';
 
-interface CardProps {
+import imgCard4 from '../image/projetoEcommerce.png';
+import figma from '../image/logos/figma.svg';
+
+export interface CardProps {
   id: string;
   imageCard: string;
   imageLogo: string[];
@@ -56,5 +59,19 @@ export const projetosDev: CardProps[] = [
         'Um framework CSS que oferece uma abordagem de desenvolvimento baseada em componentes',
         'Fornece uma interface simplificada para interagir com o banco de dados.',
     ],
+  },
+    {  
+    id: '03',
+    imageCard:imgCard4,
+    imageLogo:[figma],
+    color:"yellow",
+    titulo:"UI de E-commerce",
+    redeSocial:"Behance",
+    link:"https://www.behance.net/gallery/155567841/E-commerce-para-Produtos-de-Limpeza",
+    desc:"O projeto foi desenvolvido no Figma e tem como objetivo criar uma experiência de compra agradável e intuitiva para os usuários. O design completo inclui páginas para todo o fluxo de um e-commerce, além de páginas de apresentação da empresa e informações de redes sociais.",
+    tecnology:['Figma'],
+    descTec:['Ferramenta de design de interface.'],
+    design:true,
+    descDesign:"Páginas de Produto | Detalhes do Produto | Carrinho de Compras | Páginas de Checkout | Páginas Institucionais | Blog | Contatos",
   }
 ]
