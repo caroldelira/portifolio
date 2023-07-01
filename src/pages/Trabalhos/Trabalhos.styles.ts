@@ -8,7 +8,7 @@ export const Container = styled.div`
   position: relative;
 `
 export const BG = styled.img`
-  margin: -300px;
+
 `
 
 export const H3 = styled.h3`
@@ -32,8 +32,6 @@ export const H3S = styled.h3`
 export const Content = styled.div`
   width: 1200px;
   margin-top: 20px;
-
-
 
   position: absolute;
 `

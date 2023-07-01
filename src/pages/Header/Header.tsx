@@ -7,10 +7,10 @@ export function Header() {
   return (
     <Styled.Container>
       <Styled.ListaLink>
-        <a href="#DesenvolvimentoWeb">Desenvolvimento Web</a>
-        <a href="#DesignUXUI">Design UX/UI</a>
-        <a href="#VerMaisTrabalhos">Ver mais Trabalhaos</a>
-        <a href="#Contatos">Contatos</a>
+        <Button label='Desenvolvimento Web' variant='text' targetId='DesenvolvimentoWeb' />
+        <Button label='Design UX/UI' variant='text' targetId='DesignUXUI' />
+        <Button label='Ver mais Trabalhaos' variant='text' targetId='VerMaisTrabalhos' />
+        <Button label='Contatos' variant='text' targetId='Contatos' />
       </Styled.ListaLink>
     </Styled.Container>
   );

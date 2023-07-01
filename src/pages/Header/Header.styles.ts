@@ -24,13 +24,13 @@ export const ListaLink = styled.ul`
 
   a {
     text-decoration: none;
-    color: var(--pink);
+    color: var(--white);
 
     transition: color 0.1s linear;
 
     &:hover {
       cursor: pointer;
-      color: var(--yellow);
+      color: var(--blue);
     }
   }
   

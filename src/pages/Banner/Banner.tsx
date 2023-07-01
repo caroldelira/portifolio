@@ -21,7 +21,7 @@ export function Banner() {
         <Styled.H2Yellow>Designer UX/UI</Styled.H2Yellow>
         <Styled.ArrowUp src={arrowBanner} alt="traço cinza" />
         <Styled.ContentButton>
-          <Button label="Veja meus trabalhos" targetId="PaginaTrabalhos" />
+          <Button variant='default' label="Veja meus trabalhos" targetId="PaginaTrabalhos" />
         </Styled.ContentButton>
       </Styled.ContentContainer>
     </Styled.Container>

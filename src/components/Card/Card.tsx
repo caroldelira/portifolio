@@ -3,6 +3,7 @@ import React from 'react';
 import * as Styled from './Card.styles';
 
 interface CardProps {
+  id: string;
   imageCard: string;
   imageLogo: string[];
   titulo: string;
@@ -28,9 +29,10 @@ export function Card({
   color,
   design,
   descDesign,
+  id,
 }: CardProps) {
   return (
-    <Styled.Container color={color}>
+    <Styled.Container id={id} color={color}>
       <Styled.ImageContainer color={color}>
         <Styled.ImageCard color={color}>
           <img src={imageCard} alt="" />
@@ -68,5 +70,5 @@ export function Card({
         ) : null}
       </Styled.TextContainer>
     </Styled.Container>
-  );
+  )
 }
