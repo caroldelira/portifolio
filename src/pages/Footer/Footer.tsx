@@ -4,8 +4,10 @@ import arrow from '../../../src/image/arrowLaying3.svg';
 import linkedin from '../../image/logos/linkedin.svg';
 import outlook from '../../image/logos/outlook.svg';
 import whatsapp from '../../image/logos/whatsapp.svg';
+import up from '../../image/caroulseUp.svg';
 
 import * as Styled from './Footer.styles';
+import { Button } from '../../components/Button';
 
 export function Footer() {
   return (
@@ -35,6 +37,11 @@ export function Footer() {
           <img src={whatsapp} alt="Chat no WhatsApp" />
         </a>
       </Styled.Contatos>
+      <Styled.ButtonUp>
+        <Button variant='text' targetId='Header'>
+          <img src={up} alt="" />
+        </Button>
+      </Styled.ButtonUp>
     </Styled.Container>
   );
 }

@@ -28,3 +28,11 @@ export const Contatos = styled.div`
     }
   }
 `
+
+export const ButtonUp = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: -80px;
+`
+ 

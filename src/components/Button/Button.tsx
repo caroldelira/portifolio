@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react';
 import * as Styled from './Button.styles';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  label: string;
+  label?: string;
   targetId?: string;
   variant: 'text' | 'default';
   children?: ReactNode;
