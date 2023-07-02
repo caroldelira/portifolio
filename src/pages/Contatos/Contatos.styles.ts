@@ -4,9 +4,17 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 100px;
 
   p {
     font-size: 23px;
+  }
+ @media (max-width: 768px) {
+    margin-top: 50px;
+
+    p {
+      font-size: 20px;
+    }
   }
 `
 
@@ -14,6 +22,10 @@ export const ContatoContainer = styled.div`
   display: flex;
   flex-direction: row;
   margin: 20px;
+
+ @media (max-width: 768px) {
+  margin: 10px
+  }
 `
 
 export const RedeSocial = styled.a`
@@ -35,4 +47,20 @@ export const RedeSocial = styled.a`
     width: 70px;
     margin: 0 auto;
   }
+
+ @media (max-width: 768px) {
+
+  margin: 15px 15px;
+
+  span {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 6px;
+  }
+
+  img {
+    width: 40px;
+    margin: 0 auto;
+  }
+}
 `

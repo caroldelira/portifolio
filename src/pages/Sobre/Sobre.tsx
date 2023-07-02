@@ -8,9 +8,9 @@ import * as Styled from './Sobre.styles';
 export function Sobre() {
   return (
     <Styled.Container>
-      <div>
+      <Styled.IMG>
         <img src={imgSobre} alt="" />
-      </div>
+      </Styled.IMG>
 
       <Styled.Content id="SobreMim">
         <Styled.H3>Sobre Mim</Styled.H3>
@@ -28,9 +28,9 @@ export function Sobre() {
           programação e o design.
         </p>
       </Styled.Content>
-      <div>
+      <Styled.IMG>
         <img src={imgTrabalho} alt="" />
-      </div>
+      </Styled.IMG>
     </Styled.Container>
   );
 }

@@ -32,12 +32,20 @@ body {
   color: var(--white);
   -webkit-font-smoothing: antialiased;
   padding: 50px;
+
+   @media (max-width: 768px) {
+    padding: 10px;
+  }
 }
 
 body, input, textarea, button {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   font-size: 1rem; 
+  
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 h1, h3 {

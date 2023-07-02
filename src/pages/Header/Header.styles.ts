@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+
 export const Container = styled.div`
   position: fixed;
   top: 0;
@@ -18,13 +19,43 @@ export const Container = styled.div`
   backdrop-filter: blur(15px);
 
   z-index: 1000;
+
+  @media (max-width: 768px) {
+   /*  padding: 0 20px;
+    height: 400px;
+    background: rgba(36, 36, 36, 0.8);
+
+    &img {
+      width: 40px;
+    } */
+
+    display: none;
+  }
+
 `
 
-export const ListaLink = styled.ul`
+export const ListaLink = styled.div`
   display: flex;
   flex-direction: row;
 
   margin-right: 100px;
   gap: 20px;
   font-size: 14px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
+
+export const MenuIcon = styled.div`
+  display: none;
+
+  @media (max-width: 768px) {
+/*     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px; */
+    display: none;
+  }
+`;

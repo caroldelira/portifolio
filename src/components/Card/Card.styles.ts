@@ -33,6 +33,16 @@ export const Container = styled.div<CardProps>`
     box-shadow: 0 0 10px ${(({ color }) => colors[color])};
     background: rgba(0, 0, 0, 0.07);
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    padding: 15px;
+
+    margin: 20px auto;
+  }
 `
 export const ImageContainer = styled.div<CardProps>`
   display: flex;
@@ -40,6 +50,12 @@ export const ImageContainer = styled.div<CardProps>`
   margin-left: 30px;
   width: 50%;
   position: relative;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    margin-botton: 10px;
+    width: 100%;
+  }
 `
 
 export const ImageCard = styled.div<CardProps>`
@@ -48,6 +64,14 @@ export const ImageCard = styled.div<CardProps>`
 
   & img {
     width: 80%;
+  }
+
+  @media (max-width: 768px) {
+    padding: 10px;
+
+    & img {
+      width: 80%;
+    }
   }
 `
 
@@ -65,6 +89,15 @@ export const imageLogos = styled.div<CardProps>`
 
     &:hover {
       transform: scale(1.3) rotate(360deg);
+    }
+  }
+
+  @media (max-width: 768px) {
+
+    & img {
+      width: 15px;
+      height: auto;
+      margin-left: 10px;
     }
   }
 `
@@ -94,6 +127,21 @@ export const TextContainer = styled.div<CardProps>`
 
   & span {
     color: ${(({color}) => colors[color])};
+  }
+ 
+  @media (max-width: 768px) {
+    padding: 15px 15px;
+    width: 100%;
+
+    h4 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 12px;
+    }
+    ul {
+      line-height: 18px;
+    }
   }
 `
 export const Link = styled.a<CardProps>`

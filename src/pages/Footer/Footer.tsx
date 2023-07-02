@@ -12,9 +12,9 @@ import { Button } from '../../components/Button';
 export function Footer() {
   return (
     <Styled.Container id="Contatos">
-      <div>
+      <Styled.IMG>
         <img src={arrow} alt="" />
-      </div>
+      </Styled.IMG>
       <div>
         <p>&copy; 2023 Caroldelira</p>
       </div>

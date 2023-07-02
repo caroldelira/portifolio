@@ -2,9 +2,15 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  height: 600px;
+  max-height: 600px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 export const ImgContainer = styled.div`
   display: flex;
@@ -12,8 +18,15 @@ export const ImgContainer = styled.div`
   flex-direction: column;
   width: 50%;
 
-  img{
-    width: 800px;
+  img {
+    max-width: 800px;
+  }
+
+  @media (max-width: 768px) {
+    height: 100%;
+    img {
+      width: 350px;
+    }
   }
  `
 export const ContentContainer = styled.div`
@@ -21,6 +34,11 @@ export const ContentContainer = styled.div`
   flex-direction: column;
   width: 50%;
   height: 450px;
+
+  @media (max-width: 768px) {
+    width: 100%
+    height: 200px;
+  }
 `
 
 export const H1 = styled.h1`
@@ -38,6 +56,10 @@ export const H1 = styled.h1`
 
   /* Cor que contraste com o degradê, caso o navegador não suporte "background-clip: text" */
   color: black;
+
+  @media (max-width: 768px) {
+    font-size: 35px;
+  }
 `
 
 export const H2Pink = styled.h2`
@@ -50,6 +72,10 @@ export const H2Pink = styled.h2`
   -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
   -webkit-text-fill-color: transparent;
   color: black;
+
+  @media (max-width: 768px) {
+    font-size: 25px;
+  }
 `
 export const H2Yellow = styled.h2`
   text-align: center;
@@ -61,6 +87,10 @@ export const H2Yellow = styled.h2`
   -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
   -webkit-text-fill-color: transparent;
   color: black;
+
+  @media (max-width: 768px) {
+    font-size: 25px;
+  }
 `
 
 export const ArrowUp = styled.img`
@@ -68,6 +98,13 @@ export const ArrowUp = styled.img`
   height: 106px;
   margin: 0 auto;
   margin-top: 20px;
+
+  @media (max-width: 768px) {
+     width: 2px;
+    height: 53px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
 `
 
 export const ContentButton = styled.div`

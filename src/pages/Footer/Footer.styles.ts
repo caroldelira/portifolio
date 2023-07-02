@@ -10,6 +10,14 @@ export const Container = styled.div`
     color: var(--gray-500);
     font-size: 14px;
   }
+
+ @media (max-width: 768px) {
+   margin-top: 10px;
+
+   p {
+    font-size: 12px;
+   }
+  }
 `
 
 export const Contatos = styled.div`
@@ -27,6 +35,13 @@ export const Contatos = styled.div`
       transform: scale(1.3);
     }
   }
+
+ @media (max-width: 768px) {
+   img {
+    width: 80%;
+    padding: 6px;
+   }
+  }
 `
 
 export const ButtonUp = styled.div`
@@ -34,5 +49,18 @@ export const ButtonUp = styled.div`
   justify-content: flex-end;
   width: 100%;
   margin-top: -80px;
+
+ @media (max-width: 768px) {
+    margin-top: 10px;
+    justify-content: center;
+  }
 `
- 
+export const IMG = styled.div`
+ @media (max-width: 768px) {
+   max-width: 1200px;
+
+   img {
+    width: 500px;
+   }
+  }
+`
