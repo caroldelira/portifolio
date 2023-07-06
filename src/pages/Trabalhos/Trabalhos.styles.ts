@@ -10,14 +10,15 @@ export const Container = styled.div`
   position: relative;
 
   @media only screen and (max-width: 768px) {
-   height: 2650px;
+   min-height: 2680px;
+   margin-top: 20px;
   }
 `
-export const BG = styled.img`
+export const BG = styled.div`
 
-@media only screen and (max-width: 768px) {
-    
-  }
+  @media only screen and (max-width: 768px) {
+      display: none;
+    }
 `
 
 export const H3 = styled.h3`
@@ -31,6 +32,7 @@ export const H3 = styled.h3`
 
   @media only screen and (max-width: 768px) {
    font-size: 20px;
+   margin-bottom: 20px;
   }
 `
 export const H3S = styled.h3`
@@ -46,6 +48,7 @@ export const H3S = styled.h3`
 
   @media only screen and (max-width: 768px) {
    font-size: 20px;
+   margin-bottom: 20px;
   }
 `
 export const Content = styled.div`

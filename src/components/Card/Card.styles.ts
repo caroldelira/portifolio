@@ -36,7 +36,7 @@ export const Container = styled.div<CardProps>`
 
   @media only screen and (max-width: 768px) {
     flex-direction: column;
-    width: 100%;
+    width: 80%;
     height: 100%;
 
     padding: 15px;

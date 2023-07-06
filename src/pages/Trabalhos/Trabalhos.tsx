@@ -11,7 +11,9 @@ import * as Styled from './Trabalhos.styles';
 export function Trabalhos() {
   return (
     <Styled.Container id="PaginaTrabalhos">
-      <Styled.BG id="imgPage" src={arrowBG} alt="" />
+      <Styled.BG>
+        <img id="imgPage" src={arrowBG} alt="" />
+      </Styled.BG>
       <Styled.Content>
         <Styled.H3>Desenvolvimento Web</Styled.H3>
 

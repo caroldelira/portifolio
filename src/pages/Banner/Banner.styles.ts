@@ -10,7 +10,7 @@ export const Container = styled.div`
 
   @media only screen and (max-width: 768px) {
     flex-direction: column;
-    max-height: 550px;
+    max-height: 630px;
   }
 `
 export const ImgContainer = styled.div`

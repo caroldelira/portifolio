@@ -36,15 +36,10 @@ export const Content = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
-    margin-top: 10px;
 
     p {
-      margin: 20px 0;
-      line-height: 14px;
-      font-size: 12px;
-      font-weight: 300;
-      padding: 0 25px;
-      text-align: center;
+      line-height: 16px;
+      font-size: 13px;
       letter-spacing: 1px;
     }
   }
