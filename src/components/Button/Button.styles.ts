@@ -38,7 +38,7 @@ export const Button = styled.button<ButtonProps>`
 
   ${({ variant }) => variantCss[variant]}
   
-  @media (max-width: 768px) {
+  @media (max-width: 320px) {
     padding: 10px;
     margin-top: 10px;
     font-size: 12px;

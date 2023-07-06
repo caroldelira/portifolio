@@ -15,7 +15,7 @@ export const H3 = styled.h3`
   -webkit-text-fill-color: transparent;
   color: black;
 
-  @media (max-width: 768px) {
+  @media (max-width: 320px) {
    font-size: 20px;
   }
 `

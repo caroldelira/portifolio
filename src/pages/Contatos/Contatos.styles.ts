@@ -9,7 +9,7 @@ export const Container = styled.div`
   p {
     font-size: 23px;
   }
- @media (max-width: 768px) {
+ @media (max-width: 320px) {
     margin-top: 50px;
 
     p {
@@ -23,7 +23,7 @@ export const ContatoContainer = styled.div`
   flex-direction: row;
   margin: 20px;
 
- @media (max-width: 768px) {
+ @media (max-width: 320px) {
   margin: 10px
   }
 `
@@ -48,7 +48,7 @@ export const RedeSocial = styled.a`
     margin: 0 auto;
   }
 
- @media (max-width: 768px) {
+ @media (max-width: 320px) {
 
   margin: 15px 15px;
 

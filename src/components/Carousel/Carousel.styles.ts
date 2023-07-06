@@ -10,7 +10,7 @@ export const Container = styled.div`
     margin-top: -20px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 320px) {
     & button {
       margin-top: -10px;
     }
@@ -26,7 +26,7 @@ export const CarouselItem = styled.div`
   width: 50%;
   transition: transform 0.5s ease-in-out;
 
-  @media (max-width: 768px) {
+  @media (max-width: 320px) {
     width: 100%;
     height: 100%;
   }

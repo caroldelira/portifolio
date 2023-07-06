@@ -34,7 +34,7 @@ export const Container = styled.div<CardProps>`
     background: rgba(0, 0, 0, 0.07);
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 320px) {
     flex-direction: column;
     width: 100%;
     height: 100%;
@@ -51,7 +51,7 @@ export const ImageContainer = styled.div<CardProps>`
   width: 50%;
   position: relative;
 
-  @media (max-width: 768px) {
+  @media (max-width: 320px) {
     justify-content: center;
     margin-botton: 10px;
     width: 100%;
@@ -66,7 +66,7 @@ export const ImageCard = styled.div<CardProps>`
     width: 80%;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 320px) {
     padding: 10px;
 
     & img {
@@ -92,7 +92,7 @@ export const imageLogos = styled.div<CardProps>`
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 320px) {
 
     & img {
       width: 15px;
@@ -129,7 +129,7 @@ export const TextContainer = styled.div<CardProps>`
     color: ${(({color}) => colors[color])};
   }
  
-  @media (max-width: 768px) {
+  @media (max-width: 320px) {
     padding: 15px 15px;
     width: 100%;
 

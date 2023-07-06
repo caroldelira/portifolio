@@ -33,7 +33,7 @@ body {
   -webkit-font-smoothing: antialiased;
   padding: 50px;
 
-   @media (max-width: 768px) {
+   @media (max-width: 320px) {
     padding: 10px;
   }
 }
@@ -43,7 +43,7 @@ body, input, textarea, button {
   font-weight: 400;
   font-size: 1rem; 
   
-  @media (max-width: 768px) {
+  @media (max-width: 320px) {
     font-size: 14px;
   }
 }

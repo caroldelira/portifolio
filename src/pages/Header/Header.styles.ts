@@ -20,7 +20,7 @@ export const Container = styled.div`
 
   z-index: 1000;
 
-  @media (max-width: 768px) {
+  @media (max-width: 320px) {
    /*  padding: 0 20px;
     height: 400px;
     background: rgba(36, 36, 36, 0.8);
@@ -42,7 +42,7 @@ export const ListaLink = styled.div`
   gap: 20px;
   font-size: 14px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 320px) {
     display: none;
   }
 `
@@ -50,7 +50,7 @@ export const ListaLink = styled.div`
 export const MenuIcon = styled.div`
   display: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: 320px) {
 /*     display: flex;
     justify-content: center;
     flex-direction: column;

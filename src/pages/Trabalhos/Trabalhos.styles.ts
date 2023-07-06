@@ -9,7 +9,7 @@ export const Container = styled.div`
 
   position: relative;
 
-  @media (max-width: 768px) {
+  @media (max-width: 320px) {
    min-height: 2500px;
   }
 `
@@ -24,7 +24,7 @@ export const H3 = styled.h3`
   -webkit-text-fill-color: transparent;
   color: black;
 
-  @media (max-width: 768px) {
+  @media (max-width: 320px) {
    font-size: 20px;
   }
 `
@@ -39,7 +39,7 @@ export const H3S = styled.h3`
 
   margin-top: 40px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 320px) {
    font-size: 20px;
   }
 `
