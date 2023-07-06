@@ -1,14 +1,16 @@
 import imgCard1 from '../image/projetoCapsula.png';
+import imgCard2 from '../image/projetoPomodoro.png';
+import imgCard3 from '../image/projetoMario.png';
+import imgCard4 from '../image/projetoLPAtelie.png';
 import ts from '../image/logos/ts.svg';
 import next from '../image/logos/next.svg';
 import tw from '../image/logos/tw.svg';
 import prisma from '../image/logos/prisma.svg';
 import react from '../image/logos/react.svg';
-import imgCard2 from '../image/projetoPomodoro.png';
 import sc from '../image/logos/sc.svg';
-
-import imgCard4 from '../image/projetoEcommerce.png';
-import figma from '../image/logos/figma.svg';
+import html from '../image/logos/html.svg';
+import css from '../image/logos/css.svg';
+import js from '../image/logos/js.svg';
 
 export interface CardProps {
   id: string;
@@ -62,16 +64,33 @@ export const projetosDev: CardProps[] = [
   },
     {  
     id: '03',
+    imageCard:imgCard3,
+    imageLogo:[html, css, js],
+    color:"blue",
+    titulo:"SuperMario - SPCLover",
+    redeSocial:"GitHub",
+    link:"https://github.com/caroldelira/jogoMarioSPCLover",
+    desc:"Projeto desenvolvido como demonstração das habilidades adquiridas ao longo do meu tempo de trabalho no SPC Brasil. O objetivo era criar um jogo divertido, utilizando as tecnologias básicas de programação web, como HTML, CSS e JavaScript, e incorporando a Identidade Visual da empresa.",
+    tecnology:['HTML', 'CSS', 'JavaScript'],
+      descTec: [
+        'A linguagem de marcação que estrutura e organiza o conteúdo da página',
+        'A linguagem de estilo que permite a estilização e o layout da página.',
+        'A linguagem de programação que adiciona interatividade e lógica ao jogo.',
+      ],
+  },
+    {  
+    id: '04',
     imageCard:imgCard4,
-    imageLogo:[figma],
-    color:"yellow",
-    titulo:"UI de E-commerce",
-    redeSocial:"Behance",
-    link:"https://www.behance.net/gallery/155567841/E-commerce-para-Produtos-de-Limpeza",
-    desc:"O projeto foi desenvolvido no Figma e tem como objetivo criar uma experiência de compra agradável e intuitiva para os usuários. O design completo inclui páginas para todo o fluxo de um e-commerce, além de páginas de apresentação da empresa e informações de redes sociais.",
-    tecnology:['Figma'],
-    descTec:['Ferramenta de design de interface.'],
-    design:true,
-    descDesign:"Páginas de Produto | Detalhes do Produto | Carrinho de Compras | Páginas de Checkout | Páginas Institucionais | Blog | Contatos",
+    imageLogo:[html, css],
+    color:"orange",
+    titulo:"Landing Page - Responsiva",
+    redeSocial:"Site Ativo",
+    link:"https://mariagouveaatelie.netlify.app/",
+    desc:"Projeto da Faculdade Senac para desenvolver uma LP responsiva com HTML e CSS. com foco na divulgação dos serviços de uma trabalhadora autônoma. Essa proposta visa criar uma presença online eficiente e atraente para promover o trabalho dessa profissional de forma profissional e impactante.",
+    tecnology:['HTML', 'CSS'],
+      descTec: [
+        'A linguagem de marcação que estrutura e organiza o conteúdo da página',
+        'A linguagem de estilo que permite a estilização e o layout da página.',
+      ],
   }
 ]

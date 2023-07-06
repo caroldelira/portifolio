@@ -19,10 +19,10 @@ export const Container = styled.div<CardProps>`
 
   position: relative;
 
-  width: 1100px;
+  width: 1000px;
   height: 430px;
 
-  margin: 40px auto;
+  margin: 20px auto;
 
   border: 1px solid ${(({color}) => colors[color])};
   border-radius: 10px;
@@ -118,7 +118,7 @@ export const TextContainer = styled.div<CardProps>`
   }
 
   & p {
-    padding: 16px 0;
+    padding: 12px 0;
   }
 
   & ul {
