@@ -39,7 +39,7 @@ export const ContentContainer = styled.div`
 
   @media only screen and (max-width: 768px) {
     width: 100%;
-    margin-top: -50px;
+    margin-top: -60px;
   }
 `
 
@@ -60,7 +60,7 @@ export const H1 = styled.h1`
   color: black;
 
   @media only screen and (max-width: 768px) {
-    font-size: 35px;
+    font-size: 45px;
   }
 `
 
@@ -76,7 +76,7 @@ export const H2Pink = styled.h2`
   color: black;
 
   @media only screen and (max-width: 768px) {
-    font-size: 25px;
+    font-size: 35px;
   }
 `
 export const H2Yellow = styled.h2`
@@ -91,7 +91,7 @@ export const H2Yellow = styled.h2`
   color: black;
 
   @media only screen and (max-width: 768px) {
-    font-size: 25px;
+    font-size: 35px;
   }
 `
 
@@ -112,5 +112,8 @@ export const ArrowUp = styled.img`
 export const ContentButton = styled.div`
   display: flex;
   justify-content: center;
-
+  
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 50px;
+  }
 `

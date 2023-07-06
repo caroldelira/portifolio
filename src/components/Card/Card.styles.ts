@@ -53,7 +53,7 @@ export const ImageContainer = styled.div<CardProps>`
 
   @media only screen and (max-width: 768px) {
     justify-content: center;
-    margin-botton: 10px;
+    margin: 8px 8px;
     width: 100%;
   }
 `
@@ -67,7 +67,7 @@ export const ImageCard = styled.div<CardProps>`
   }
 
   @media only screen and (max-width: 768px) {
-    padding: 10px;
+    padding: 10px 10px;
 
     & img {
       width: 80%;
@@ -93,9 +93,9 @@ export const imageLogos = styled.div<CardProps>`
   }
 
   @media only screen and (max-width: 768px) {
-
+    
     & img {
-      width: 15px;
+      width: 20px;
       height: auto;
       margin-left: 10px;
     }
@@ -130,14 +130,14 @@ export const TextContainer = styled.div<CardProps>`
   }
  
   @media only screen and (max-width: 768px) {
-    padding: 15px 15px;
+    padding: 10px 10px;
     width: 100%;
 
     h4 {
       font-size: 16px;
     }
     p {
-      font-size: 12px;
+      font-size: 14px;
     }
     ul {
       line-height: 18px;

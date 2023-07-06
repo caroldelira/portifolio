@@ -10,7 +10,7 @@ export const Container = styled.div`
   position: relative;
 
   @media only screen and (max-width: 768px) {
-   min-height: 2680px;
+   height: 2800px;
    margin-top: 20px;
   }
 `
@@ -24,6 +24,7 @@ export const BG = styled.div`
 export const H3 = styled.h3`
   text-align: center;
   font-size: 35px;
+  margin-bottom: 20px;
   background-image: var(--linear-pink);
   background-clip: text;
   -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
@@ -31,13 +32,13 @@ export const H3 = styled.h3`
   color: black;
 
   @media only screen and (max-width: 768px) {
-   font-size: 20px;
-   margin-bottom: 20px;
+   font-size: 24px;
   }
 `
 export const H3S = styled.h3`
   text-align: center;
   font-size: 35px;
+  margin-bottom: 20px;
   background-image: var(--linear-yellow);
   background-clip: text;
   -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
@@ -47,8 +48,7 @@ export const H3S = styled.h3`
   margin-top: 40px;
 
   @media only screen and (max-width: 768px) {
-   font-size: 20px;
-   margin-bottom: 20px;
+   font-size: 24px;
   }
 `
 export const Content = styled.div`

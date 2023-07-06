@@ -17,7 +17,7 @@ export const H3 = styled.h3`
 
   @media only screen and (max-width: 768px) {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 24px;
   }
 `
 

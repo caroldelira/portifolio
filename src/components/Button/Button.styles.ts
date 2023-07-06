@@ -41,6 +41,6 @@ export const Button = styled.button<ButtonProps>`
   @media only screen and (max-width: 768px) {
     padding: 10px;
     margin-top: 10px;
-    font-size: 12px;
+    font-size: 14px;
   }
 `
