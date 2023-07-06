@@ -59,3 +59,16 @@ export const MenuIcon = styled.div`
     display: none;
   }
 `;
+
+export const ContainerHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+    img {
+    width: 40px;
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+
+`

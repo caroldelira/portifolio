@@ -24,6 +24,7 @@ export const Contatos = styled.div`
   margin-top: 20px;
   display: flex;
   align-items: center;
+  z-index: 100;
   
   img {
     width: 100%;
