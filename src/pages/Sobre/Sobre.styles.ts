@@ -15,8 +15,9 @@ export const H3 = styled.h3`
   -webkit-text-fill-color: transparent;
   color: black;
 
-  @media (max-width: 320px) {
-   font-size: 20px;
+  @media only screen and (max-width: 768px) {
+    margin-top: 20px;
+    font-size: 20px;
   }
 `
 
@@ -34,7 +35,7 @@ export const Content = styled.div`
     letter-spacing: 1px;
   }
 
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     margin-top: 10px;
 
     p {
@@ -50,11 +51,11 @@ export const Content = styled.div`
 `
 
 export const IMG = styled.div`
- @media (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
    max-width: 1200px;
 
    img {
-    width: 500px;
+    width: 100%;
    }
   }
 `

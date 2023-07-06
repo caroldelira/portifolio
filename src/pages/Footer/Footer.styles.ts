@@ -11,7 +11,7 @@ export const Container = styled.div`
     font-size: 14px;
   }
 
- @media (max-width: 320px) {
+  @media only screen and (max-width: 768px) {
    margin-top: 10px;
 
    p {
@@ -36,7 +36,7 @@ export const Contatos = styled.div`
     }
   }
 
- @media (max-width: 320px) {
+  @media only screen and (max-width: 768px) {
    img {
     width: 80%;
     padding: 6px;
@@ -50,17 +50,17 @@ export const ButtonUp = styled.div`
   width: 100%;
   margin-top: -80px;
 
- @media (max-width: 320px) {
+  @media only screen and (max-width: 768px) {
     margin-top: 10px;
     justify-content: center;
   }
 `
 export const IMG = styled.div`
- @media (max-width: 320px) {
+  @media only screen and (max-width: 768px) {
    max-width: 1200px;
 
    img {
-    width: 500px;
+    width: 100%;
    }
   }
 `
