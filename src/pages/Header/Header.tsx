@@ -13,6 +13,8 @@ export function Header() {
     setMenuOpen(!menuOpen);
   }; */
 
+  console.log(setMenuOpen)
+
   return (
     <Styled.Container id='Header'>
       <Styled.MenuIcon>
