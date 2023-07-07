@@ -24,7 +24,7 @@ export function Carousel({projects}: CarouselProps) {
   useEffect(() => {
      if (endIndex === totalCards) {
      setIsReversed(true)
-  } else if (endIndex != totalCards) {
+  } else if (startIndex === 0) {
     setIsReversed(false)
    }
   },[startIndex, endIndex])
@@ -37,10 +37,7 @@ export function Carousel({projects}: CarouselProps) {
     if (endIndex < totalCards) {
       setStartIndex(startIndex + 1);
       setEndIndex(endIndex + 1);
-    } else {
-      setStartIndex(totalCards - 1);
-      setEndIndex(totalCards - 3);
-    }
+    } 
   };
   console.log(handleNext, 'next')
 
@@ -48,10 +45,7 @@ export function Carousel({projects}: CarouselProps) {
     if (startIndex > 0) {
       setStartIndex(startIndex - 1);
       setEndIndex(endIndex - 1);
-    } else {
-      setStartIndex(0);
-      setEndIndex(2);
-    }
+    } 
   };
 
     console.log(handlePrev, 'Prev')
