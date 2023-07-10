@@ -9,8 +9,6 @@ export const Container = styled.div`
 
   @media only screen and (max-width: 768px) {
     flex-direction: column;
-    overflow: visible;
-    
 
     & button {
       display: none;
@@ -22,6 +20,15 @@ export const ContainerCards = styled.div`
   display: flex;
   flex-direction: row;
   overflow: hidden;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
 `;
 
 

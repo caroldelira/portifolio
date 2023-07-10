@@ -1,4 +1,5 @@
-import React, { ReactNode, useState } from 'react';
+import React, { ReactNode, useEffect, useState } from 'react';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import buttonRight from '../../image/carouselRight.svg';
 import buttonLeft from '../../image/caroulseLeft.svg';
@@ -19,21 +20,24 @@ export function Carousel({projects}: CarouselProps) {
   const [startIndex, setStartIndex] = useState(0);
   const [endIndex, setEndIndex] = useState(2);
 
+  const isMobile = window.innerWidth <= 768;
+
   const totalCards = projects.length;
+
+  useEffect(() => {
+    if (isMobile) {
+
+      setEndIndex(totalCards);
+    } else {
+
+      setEndIndex(2);
+    }
+  }, [isMobile, totalCards]);
 
   const handleNext = () => {
     if (endIndex < totalCards) {
       setStartIndex(startIndex + 1);
       setEndIndex(endIndex + 1);
-
-      const carouselContainer = document.getElementById('carouselContainer');
-      if (carouselContainer) {
-        const nextScrollLeft = carouselContainer.offsetWidth;
-        carouselContainer.scrollTo({
-          left: nextScrollLeft,
-          behavior: 'smooth',
-        });
-      }
     }
    
   }
@@ -46,28 +50,30 @@ export function Carousel({projects}: CarouselProps) {
   };
 
   return (
-    <Styled.Container id='carouselContainer'>
+    <Styled.Container>
       <Button variant="text" onClick={handlePrev} disabled={startIndex === 0}>
         <img src={buttonLeft} alt="" />
       </Button>
-      <Styled.ContainerCards>
-        <Styled.CarouselItem>
+            <Styled.ContainerCards>
+        <TransitionGroup component={null}>
           {projects.slice(startIndex, endIndex).map((card, index) => (
-            <Card
-              key={index}
-              id={card.id}
-              color={card.color}
-              desc={card.desc}
-              descTec={card.descTec}
-              imageCard={card.imageCard}
-              imageLogo={card.imageLogo}
-              link={card.link}
-              redeSocial={card.redeSocial}
-              tecnology={card.tecnology}
-              titulo={card.titulo}
-            />
+            <CSSTransition key={index} classNames='fade' timeout={500}>
+              <Card
+                key={index}
+                id={card.id}
+                color={card.color}
+                desc={card.desc}
+                descTec={card.descTec}
+                imageCard={card.imageCard}
+                imageLogo={card.imageLogo}
+                link={card.link}
+                redeSocial={card.redeSocial}
+                tecnology={card.tecnology}
+                titulo={card.titulo}
+              />
+            </CSSTransition>
           ))}
-        </Styled.CarouselItem>
+        </TransitionGroup>
       </Styled.ContainerCards>
 
       <Button variant="text" onClick={handleNext} disabled={endIndex === totalCards}>

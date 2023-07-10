@@ -6,6 +6,8 @@ export const Container = styled.div`
   top: 0;
   right: 0;
   left: 0;
+
+  padding-bottom: 20px;
   
   display: flex;
   flex-direction: row;
