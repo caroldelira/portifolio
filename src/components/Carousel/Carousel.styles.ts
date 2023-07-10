@@ -5,9 +5,12 @@ export const Container = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  height: 700px;
 
   @media only screen and (max-width: 768px) {
     flex-direction: column;
+    overflow: visible;
+    
 
     & button {
       display: none;
@@ -20,6 +23,7 @@ export const ContainerCards = styled.div`
   flex-direction: row;
   overflow: hidden;
 `;
+
 
 export const CarouselItem = styled.div`
   display: flex;

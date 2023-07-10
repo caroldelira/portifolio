@@ -39,12 +39,7 @@ export const Container = styled.div<CardProps>`
 
   @media only screen and (max-width: 768px) {
     flex-direction: column;
-    width: 80%;
-    height: 100%;
-
-    padding: 15px;
-
-    margin: 20px auto;
+    width: 400px;
   }
 `
 export const ImageContainer = styled.div<CardProps>`
