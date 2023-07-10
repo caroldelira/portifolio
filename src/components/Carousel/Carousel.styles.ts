@@ -2,32 +2,33 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
 
-   & button {
-    margin-top: -20px;
-  }
-
   @media only screen and (max-width: 768px) {
+    flex-direction: column;
+
     & button {
-      margin-top: -10px;
+      display: none;
     }
   }
 `;
 
 export const ContainerCards = styled.div`
   display: flex;
+  flex-direction: row;
   overflow: hidden;
 `;
 
 export const CarouselItem = styled.div`
-  width: 50%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
   transition: transform 0.5s ease-in-out;
 
   @media only screen and (max-width: 768px) {
-    width: 100%;
-    height: 100%;
+    flex-direction: column;
+    gap: 0px;
   }
 `;

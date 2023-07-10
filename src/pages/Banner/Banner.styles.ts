@@ -4,9 +4,8 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: 600px;
-  max-width: 1200px;
-  margin: 0 auto;
+  height: 600px;
+  width: 100%;
 
   @media only screen and (max-width: 768px) {
     flex-direction: column;
@@ -20,7 +19,7 @@ export const ImgContainer = styled.div`
   width: 50%;
 
   img {
-    max-width: 800px;
+    max-width: 130%;
   }
 
   @media only screen and (max-width: 768px) { 

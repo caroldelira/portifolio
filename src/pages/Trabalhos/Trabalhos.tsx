@@ -1,5 +1,5 @@
 import React from 'react';
-import arrowBG from '../../image/arrowContainer.svg';
+import arrowBG from '../../image/arrowContainer.png';
 
 import { Carousel } from '../../components/Carousel';
 
@@ -11,9 +11,9 @@ import * as Styled from './Trabalhos.styles';
 export function Trabalhos() {
   return (
     <Styled.Container id="PaginaTrabalhos">
-      <Styled.BG>
+      
         <img id="imgPage" src={arrowBG} alt="" />
-      </Styled.BG>
+      
       <Styled.Content>
         <Styled.H3>Desenvolvimento Web</Styled.H3>
 
@@ -23,7 +23,8 @@ export function Trabalhos() {
         <Styled.H3S>Design UX/UI</Styled.H3S>
         <Carousel projects={projetosDes} />
         <div id="DesignUXUI"></div>
-      </Styled.Content>
+        </Styled.Content>
+     
     </Styled.Container>
   );
 }

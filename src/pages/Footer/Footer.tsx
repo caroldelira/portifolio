@@ -4,10 +4,11 @@ import arrow from '../../../src/image/arrowLaying3.svg';
 import linkedin from '../../image/logos/linkedin.svg';
 import outlook from '../../image/logos/outlook.svg';
 import whatsapp from '../../image/logos/whatsapp.svg';
-import up from '../../image/caroulseUp.svg';
+import up from '../../image/buttonUp.svg';
+
+import { Button } from '../../components/Button';
 
 import * as Styled from './Footer.styles';
-import { Button } from '../../components/Button';
 
 export function Footer() {
   return (

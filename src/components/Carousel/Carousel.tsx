@@ -1,13 +1,14 @@
 import React, { ReactNode, useEffect, useState } from 'react';
 
-import buttonDown from '../../image/carouselDown.svg';
-import buttonUp from '../../image/caroulseUp.svg';
+import buttonRight from '../../image/carouselRight.svg';
+import buttonLeft from '../../image/caroulseLeft.svg';
 
 import { CardProps } from '../../models/projetosDev';
+
+import { Button } from '../Button';
 import { Card } from '../Card';
 
 import * as Styled from './Carousel.styles';
-import { Button } from '../Button';
 
 export interface CarouselProps {
   projects: CardProps[];
@@ -51,6 +52,9 @@ export function Carousel({projects}: CarouselProps) {
     console.log(handlePrev, 'Prev')
   return (
     <Styled.Container>
+      <Button variant="text" onClick={handlePrev}>
+        <img src={buttonLeft} alt="" />
+      </Button>
       <Styled.ContainerCards>
         <Styled.CarouselItem>
           {projects.slice(startIndex, endIndex).map((card, index) => (
@@ -71,8 +75,8 @@ export function Carousel({projects}: CarouselProps) {
         </Styled.CarouselItem>
       </Styled.ContainerCards>
 
-      <Button variant="text" onClick={isReversed ? handlePrev : handleNext}>
-        <img src={isReversed ? buttonUp : buttonDown} alt="" />
+      <Button variant="text" onClick={handleNext}>
+        <img src={buttonRight} alt="" />
       </Button>
     </Styled.Container>
   );

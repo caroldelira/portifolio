@@ -14,15 +14,14 @@ const colors = {
 
 export const Container = styled.div<CardProps>`
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
 
   position: relative;
 
-  width: 1000px;
-  height: 430px;
-
-  margin: 20px auto;
+  width: 480px;
+  height: 630px;
+  padding: 16px;
 
   border: 1px solid ${(({color}) => colors[color])};
   border-radius: 10px;
@@ -47,38 +46,32 @@ export const Container = styled.div<CardProps>`
 export const ImageContainer = styled.div<CardProps>`
   display: flex;
   flex-direction: column;
-  margin-left: 30px;
-  width: 50%;
+  align-items: center;
+  width: 100%;
   position: relative;
 
   @media only screen and (max-width: 768px) {
     justify-content: center;
-    margin: 8px 8px;
     width: 100%;
   }
 `
 
 export const ImageCard = styled.div<CardProps>`
-  width: 100%;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
 
   & img {
-    width: 80%;
+    width: 100%;
   }
 
   @media only screen and (max-width: 768px) {
-    padding: 10px 10px;
 
-    & img {
-      width: 80%;
-    }
   }
 `
 
 export const imageLogos = styled.div<CardProps>`
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  margin-top: 16px;
 
   & img {
     width: 30px;
@@ -105,28 +98,32 @@ export const TextContainer = styled.div<CardProps>`
   display: flex;
   flex-direction: column;
 
-  width: 50%;
-  height: 100%;
+  width: 100%;
 
-  padding: 20px 30px;
+  padding: 20px 0px;
 
   position: relative;
 
   & h4 {
     color: ${(({color}) => colors[color])};
-    font-size: 24px;
+    font-size: 20px;
   }
 
   & p {
-    padding: 12px 0;
+    padding: 10px 0;
+    font-size: 14px;
   }
 
   & ul {
-    line-height: 20px;
+    line-height: 18px;
+    font-size: 14px;
+    list-style: none;
   }
 
   & span {
-    color: ${(({color}) => colors[color])};
+    color: ${(({ color }) => colors[color])};
+    font-size: 16px;
+    font-weight: bold;
   }
  
   @media only screen and (max-width: 768px) {
@@ -154,5 +151,6 @@ export const Link = styled.a<CardProps>`
 `
 
 export const li = styled.li<CardProps>`
+  list-style: none;
   color: ${(({color}) => colors[color])};
 `

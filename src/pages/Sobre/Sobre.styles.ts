@@ -9,6 +9,9 @@ export const Container = styled.div`
 export const H3 = styled.h3`
   text-align: center;
   font-size: 35px;
+
+  margin-top: 40px;
+  
   background-image: var(--linear-blue);
   background-clip: text;
   -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */

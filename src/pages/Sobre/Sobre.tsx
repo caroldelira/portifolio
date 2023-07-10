@@ -15,7 +15,7 @@ export function Sobre() {
       <Styled.Content id="SobreMim">
         <Styled.H3>Sobre Mim</Styled.H3>
         <p>
-          E aí, pessoal! Me chamo Carol e vim falar um pouco de mim... sou uma
+          E aí, pessoal! Me chamo Carol... sou uma
           apaixonada pelo desenvolvimento web com um olhar especial para UX/UI.
           Trabalho com a criação de interfaces intuitivas e agradáveis, sempre
           buscando a melhor experiência para o usuário. <br />
@@ -27,7 +27,8 @@ export function Sobre() {
           uma experiência agradável. <br />
           <br />
           Meu portifólio é diversificado e cada um dos Projetos reflete minha
-          paixão, dedicação e compromisso com a programação e o design.
+          paixão, dedicação e compromisso com a programação e o design. Minhas principais
+          tecnologias utilizadas são: <b><i>React.js</i></b>, <b><i>TypeScript</i></b>, <b><i>JavaScript</i></b>, <b><i>Styled-componentes</i></b>, <b><i>git</i></b> e <b><i>Figma</i></b>.
         </p>
       </Styled.Content>
       <Styled.IMG>

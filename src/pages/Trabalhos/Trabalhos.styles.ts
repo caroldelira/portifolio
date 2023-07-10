@@ -5,26 +5,25 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
 
-  height: 100%;
-
-  position: relative;
+  height: 1680px;
 
   @media only screen and (max-width: 768px) {
-   height: 2800px;
+   height: 100%;
    margin-top: 20px;
-  }
-`
-export const BG = styled.div`
 
-  @media only screen and (max-width: 768px) {
-      display: none;
-    }
+   #imgPage {
+     width: 100%;
+     position: absolute;
+   }
+  }
 `
 
 export const H3 = styled.h3`
   text-align: center;
   font-size: 35px;
-  margin-bottom: 20px;
+  
+  margin-bottom: 40px;
+  
   background-image: var(--linear-pink);
   background-clip: text;
   -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
@@ -32,28 +31,35 @@ export const H3 = styled.h3`
   color: black;
 
   @media only screen and (max-width: 768px) {
-   font-size: 24px;
+   font-size: 26px;
   }
 `
 export const H3S = styled.h3`
   text-align: center;
   font-size: 35px;
-  margin-bottom: 20px;
+  
+  margin-top: 100px;
+  margin-bottom: 40px;
+  
   background-image: var(--linear-yellow);
   background-clip: text;
   -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
   -webkit-text-fill-color: transparent;
   color: black;
 
-  margin-top: 40px;
 
   @media only screen and (max-width: 768px) {
-   font-size: 24px;
+   font-size: 26px;
   }
 `
 export const Content = styled.div`
-  max-width: 1200px;
-  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  margin-top: 40px;
 
   position: absolute;
+
+  @media only screen and (max-width: 768px) {
+    position: relative;
+  }
 `
