@@ -23,14 +23,18 @@ export const Container = styled.div<CardProps>`
   height: 630px;
   padding: 16px;
 
+  margin: 10px;
+
   border: 1px solid ${(({color}) => colors[color])};
   border-radius: 10px;
 
   transition: box-shadow 0.5s ease;
+  transition: transform 0.8s ease;
 
   &:hover {
     box-shadow: 0 0 10px ${(({ color }) => colors[color])};
     background: rgba(0, 0, 0, 0.07);
+    transform: scale(1.01);
   }
 
   @media only screen and (max-width: 768px) {
@@ -62,10 +66,6 @@ export const ImageCard = styled.div<CardProps>`
 
   & img {
     width: 100%;
-  }
-
-  @media only screen and (max-width: 768px) {
-
   }
 `
 

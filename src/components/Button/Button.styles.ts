@@ -10,9 +10,20 @@ const variantCss = {
 
     transition: color 0.5s ease-out;
 
-    &:hover{
-    color: var(--blue);
-    cursor: pointer;
+     &:disabled {
+      filter: brightness(70%);
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+
+    &:not(:disabled):hover {
+      color: var(--blue);
+      cursor: pointer;
+
+      & img {
+        filter: brightness(1.75);
+      }
+    }
   }
   `,
   default: `
@@ -32,14 +43,16 @@ export const Button = styled.button<ButtonProps>`
   color: var(--white);
   font-weight: bold;
   background: transparent;
+
+  height: 100%;
   
-  padding: 10px;
+  padding: 0px 10px;
   margin-top: 20px;
 
   ${({ variant }) => variantCss[variant]}
   
   @media only screen and (max-width: 768px) {
-    padding: 10px;
+
     margin-top: 10px;
     font-size: 14px;
   }
