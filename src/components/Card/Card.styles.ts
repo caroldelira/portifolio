@@ -1,7 +1,8 @@
 import styled from "styled-components"
 
 interface CardProps {
-  color: 'blue' | 'green' | 'yellow' | 'pink' | 'orange'
+  color: 'blue' | 'green' | 'yellow' | 'pink' | 'orange';
+  design?: boolean;
 }
 
 const colors = {
@@ -12,6 +13,7 @@ const colors = {
   orange: 'var(--orange)'
 }
 
+
 export const Container = styled.div<CardProps>`
   display: flex;
   flex-direction: column;
@@ -20,7 +22,7 @@ export const Container = styled.div<CardProps>`
   position: relative;
 
   width: 480px;
-  height: 630px;
+  height: ${(() => `design ? 550px : 630px`)};
   padding: 16px;
 
   margin: 10px;
@@ -122,7 +124,7 @@ export const TextContainer = styled.div<CardProps>`
   }
  
   @media only screen and (max-width: 768px) {
-    padding: 10px 10px;
+    padding: 4px 2px;
     width: 100%;
 
     h4 {

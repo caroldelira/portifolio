@@ -7,24 +7,32 @@ import { projetosDev } from '../../models/projetosDev';
 import { projetosDes } from '../../models/projetosDes';
 
 import * as Styled from './Trabalhos.styles';
+import { CarouselMobile } from '../../components/CarouselMobile/CarouselMobile';
 
 export function Trabalhos() {
+  const isMobile = window.innerWidth <= 768;
+
   return (
     <Styled.Container id="PaginaTrabalhos">
-      
-        <img id="imgPage" src={arrowBG} alt="" />
-      
-      <Styled.Content>
+      <img id="imgPage" src={arrowBG} alt="" />
+
+      <Styled.Content id="DesenvolvimentoWeb">
         <Styled.H3>Desenvolvimento Web</Styled.H3>
 
-        <Carousel projects={projetosDev} />
-        <div id="DesenvolvimentoWeb"></div>
+        {isMobile ? (
+          <CarouselMobile projects={projetosDev} />
+        ) : (
+          <Carousel projects={projetosDev} />
+        )}
 
         <Styled.H3S>Design UX/UI</Styled.H3S>
-        <Carousel projects={projetosDes} />
-        <div id="DesignUXUI"></div>
-        </Styled.Content>
-     
+
+        {isMobile ? (
+          <CarouselMobile projects={projetosDes} />
+        ) : (
+          <Carousel projects={projetosDes} />
+        )}
+      </Styled.Content>
     </Styled.Container>
   );
 }

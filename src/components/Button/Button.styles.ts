@@ -7,7 +7,7 @@ interface ButtonProps {
 const variantCss = {
   text: `
     border: none;
-
+    
     transition: color 0.5s ease-out;
 
      &:disabled {

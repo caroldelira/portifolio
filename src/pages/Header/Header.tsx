@@ -32,7 +32,7 @@ export function Header() {
             variant="text"
             targetId="DesenvolvimentoWeb"
           />
-          <Button label="Design UX/UI" variant="text" targetId="DesignUXUI" />
+          <Button label="Design UX/UI" variant="text" targetId="Design" />
           <Button
             label="Ver mais Trabalhaos"
             variant="text"

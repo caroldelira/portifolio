@@ -9,7 +9,13 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children?: ReactNode;
 }
 
-export function Button({ label, targetId, variant, children, ...props }: ButtonProps) {
+export function Button({
+  label,
+  targetId,
+  variant,
+  children,
+  ...props
+}: ButtonProps) {
   const handleClick = () => {
     if (targetId) {
       const targetElement = document.getElementById(targetId);

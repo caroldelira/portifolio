@@ -8,14 +8,14 @@ import { CardProps } from '../../models/projetosDev';
 import { Button } from '../Button/Button';
 import { Card } from '../Card';
 
-import * as Styled from './Carousel.styles';
+import * as Styled from './CarouselMobile.styles';
 
 export interface CarouselProps {
   projects: CardProps[];
   children?: ReactNode;
 }
 
-export function Carousel({ projects }: CarouselProps) {
+export function CarouselMobile({ projects }: CarouselProps) {
   const [startIndex, setStartIndex] = useState(0);
   const [endIndex, setEndIndex] = useState(2);
 
