@@ -22,6 +22,10 @@ export const Container = styled.div`
 
   z-index: 1000;
 
+  a {
+    width: 90px;
+  }
+
   @media only screen and (max-width: 768px) {
    /*  padding: 0 20px;
     height: 400px;

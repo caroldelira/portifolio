@@ -3,7 +3,7 @@ import { Button } from '../../components/Button';
 
 import menu from '../../image/icones/menu.svg';
 import close from '../../image/icones/close.svg';
-import logo from '../../image/logos/logo.png';
+import logoLinkedin from '../../image/logos/logo-linkedin.png';
 
 import * as Styled from './Header.styles';
 
@@ -22,9 +22,13 @@ export function Header() {
         {menuOpen ? <img src={close} alt="" /> : <img src={menu} alt="" />}
       </Styled.MenuIcon>
       <Styled.ContainerHeader>
-        <div>
-          <img src={logo} alt="" />
-        </div>
+        <a
+          href="https://www.linkedin.com/in/ana-carolina-vasconcelos-510739183/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={logoLinkedin} alt="Link para Linkedin" />
+        </a>
 
         <Styled.ListaLink>
           <Button

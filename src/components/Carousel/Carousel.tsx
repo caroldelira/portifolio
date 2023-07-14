@@ -13,9 +13,10 @@ import * as Styled from './Carousel.styles';
 export interface CarouselProps {
   projects: CardProps[];
   children?: ReactNode;
+  id?: string;
 }
 
-export function Carousel({ projects }: CarouselProps) {
+export function Carousel({ projects, id }: CarouselProps) {
   const [startIndex, setStartIndex] = useState(0);
   const [endIndex, setEndIndex] = useState(2);
 
@@ -36,7 +37,7 @@ export function Carousel({ projects }: CarouselProps) {
   };
 
   return (
-    <Styled.Container>
+    <Styled.Container id={id}>
       <Button variant="text" onClick={handlePrev} disabled={startIndex === 0}>
         <img src={buttonLeft} alt="" />
       </Button>
