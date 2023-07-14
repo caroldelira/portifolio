@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
+
 interface MenuProps {
   mobileMenu: boolean;
 }
-
 
 export const Container = styled.nav<MenuProps>`
   position: fixed;
@@ -30,7 +30,7 @@ export const Container = styled.nav<MenuProps>`
   @media only screen and (max-width: 768px) {
     flex-direction: column;
     justify-content: center;
-    height: ${({ mobileMenu }) => mobileMenu ? '300px' : '70px' };
+    height: ${({ mobileMenu }) => mobileMenu ? '350px' : '70px' };
     padding-bottom: 0px;
     margin-top: ${({ mobileMenu }) => mobileMenu ? '-50px' : '0px' };
   }

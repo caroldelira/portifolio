@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Button } from '../../components/Button';
 
 import close from '../../image/icones/close.svg';
@@ -11,24 +11,26 @@ interface MenuProps {
 }
 
 export function Menu({ mobileMenuOpen, toggleMenu }: MenuProps) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleButtonClick = () => {
-    setIsOpen(!isOpen);
-    toggleMenu();
-  };
-
   const handleCloseMenuWithDelay = () => {
-    handleButtonClick();
+    toggleMenu();
   };
 
   return (
     <Styled.Container mobileMenu={mobileMenuOpen}>
       <Styled.MenuIcon mobileMenu={mobileMenuOpen}>
-        <img src={close} alt="" onClick={handleButtonClick} />
+        <img src={close} alt="" onClick={toggleMenu} />
       </Styled.MenuIcon>
 
       <Styled.ListaLink mobileMenu={mobileMenuOpen}>
+        {mobileMenuOpen ? (
+          <Button
+            label="Início"
+            variant="text"
+            targetId="Header"
+            onClick={handleCloseMenuWithDelay}
+          />
+        ) : null}
+
         <Button
           label="Desenvolvimento Web"
           variant="text"
