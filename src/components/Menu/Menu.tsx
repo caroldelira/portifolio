@@ -22,15 +22,12 @@ export function Menu({ mobileMenuOpen, toggleMenu }: MenuProps) {
       </Styled.MenuIcon>
 
       <Styled.ListaLink mobileMenu={mobileMenuOpen}>
-        {mobileMenuOpen ? (
-          <Button
-            label="Início"
-            variant="text"
-            targetId="Header"
-            onClick={handleCloseMenuWithDelay}
-          />
-        ) : null}
-
+        <Button
+          label="Início"
+          variant="text"
+          targetId="Header"
+          onClick={handleCloseMenuWithDelay}
+        />
         <Button
           label="Desenvolvimento Web"
           variant="text"
