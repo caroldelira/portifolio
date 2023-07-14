@@ -7,23 +7,20 @@ import { Menu } from '../../components/Menu';
 
 import * as Styled from './Header.styles';
 
-interface HeaderProps {
-  menuOpen: boolean;
-}
-
-export function Header({ menuOpen }: HeaderProps) {
+export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
-    menuOpen;
   };
 
-  console.log(mobileMenuOpen, 'header');
-
   return (
-    <Styled.Container mobileMenu={mobileMenuOpen} id="Header">
-      <Styled.ContainerHeader>
+    <Styled.Container
+      mobileMenu={mobileMenuOpen}
+      id="Header"
+      className={mobileMenuOpen ? 'isOpen' : 'notOpen'}
+    >
+      <Styled.ContainerHeader mobileMenu={mobileMenuOpen}>
         <a
           id="logo"
           href="https://www.linkedin.com/in/ana-carolina-vasconcelos-510739183/"

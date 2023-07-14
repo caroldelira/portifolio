@@ -12,7 +12,7 @@ import GlobalStyles from './styles/GlobalStyles';
 export function App() {
   return (
     <>
-      <Header menuOpen />
+      <Header />
       <Banner />
       <Sobre />
       <Trabalhos />

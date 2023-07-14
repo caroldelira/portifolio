@@ -1,38 +1,11 @@
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 
 interface MenuProps {
   mobileMenu: boolean;
 }
 
-const slideDownAnimation = keyframes`
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-`;
 
-const slideUpAnimation = keyframes`
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-100%);
-  }
-`;
-
-export const Container = styled.div<MenuProps>`
-    animation-duration: 0.3s;
-    animation-timing-function: ease;
-
-    &.isOpen {
-      animation-name: ${slideDownAnimation};
-    }
-
-    &:not(.isOpen) {
-      animation-name: ${slideUpAnimation};
-    }
+export const Container = styled.div`
 
 `
 
@@ -50,9 +23,9 @@ export const ListaLink = styled.div<MenuProps>`
     margin-right: 0px;
     margin-top: 25px;
     gap: 10px;
-    display: ${({mobileMenu}) => mobileMenu ? 'flex' : 'none' }
+    display: ${({ mobileMenu }) => mobileMenu ? 'flex' : 'none'};
   }
-`
+`;
 
 export const MenuIcon = styled.div<MenuProps>`
   display: none;
@@ -67,9 +40,7 @@ export const MenuIcon = styled.div<MenuProps>`
       cursor: pointer;
       width: 100%;
     }
-  
-  
-}
+  }
 `;
 
 export const ContainerHeader = styled.div`

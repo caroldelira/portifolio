@@ -5,6 +5,7 @@ interface MenuProps {
   mobileMenu: boolean;
 }
 
+
 export const Container = styled.nav<MenuProps>`
   position: fixed;
   top: 0;
@@ -26,13 +27,17 @@ export const Container = styled.nav<MenuProps>`
 
   z-index: 1000;
 
-  
   @media only screen and (max-width: 768px) {
     flex-direction: column;
     justify-content: center;
     height: ${({ mobileMenu }) => mobileMenu ? '350px' : '70px' };
     padding-bottom: 0px;
     margin-top: ${({ mobileMenu }) => mobileMenu ? '-50px' : '0px' };
+
+    animation-duration: ${({ mobileMenu }) => mobileMenu ? '0.7s' : 'none' };
+    animation-timing-function: ${({ mobileMenu }) => mobileMenu ? 'ease' : 'none' };
+
+    transition: height 0.5s ease;
   }
 `
 
@@ -61,7 +66,7 @@ export const MenuIcon = styled.div<MenuProps>`
   }
 `;
 
-export const ContainerHeader = styled.div`
+export const ContainerHeader = styled.div<MenuProps>`
   display: flex;
   justify-content: space-between;
   width: 100%;

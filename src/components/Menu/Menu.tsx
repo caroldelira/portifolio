@@ -16,7 +16,7 @@ export function Menu({ mobileMenuOpen, toggleMenu }: MenuProps) {
   };
 
   return (
-    <Styled.Container mobileMenu={mobileMenuOpen}>
+    <Styled.Container>
       <Styled.MenuIcon mobileMenu={mobileMenuOpen}>
         <img src={close} alt="" onClick={toggleMenu} />
       </Styled.MenuIcon>
