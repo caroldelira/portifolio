@@ -10,7 +10,7 @@ interface MenuProps {
   mobileMenuOpen: boolean;
 }
 
-export function Menu({mobileMenuOpen, toggleMenu}: MenuProps) {
+export function Menu({ mobileMenuOpen, toggleMenu }: MenuProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleButtonClick = () => {
@@ -18,7 +18,9 @@ export function Menu({mobileMenuOpen, toggleMenu}: MenuProps) {
     toggleMenu();
   };
 
-  console.log(isOpen, 'menu')
+  const handleCloseMenuWithDelay = () => {
+    handleButtonClick();
+  };
 
   return (
     <Styled.Container mobileMenu={mobileMenuOpen}>
@@ -27,18 +29,25 @@ export function Menu({mobileMenuOpen, toggleMenu}: MenuProps) {
       </Styled.MenuIcon>
 
       <Styled.ListaLink mobileMenu={mobileMenuOpen}>
-          <Button
-            label="Desenvolvimento Web"
-            variant="text"
-            targetId="DesenvolvimentoWeb"
-          />
-          <Button label="Design UX/UI" variant="text" targetId="Design" />
-          <Button
-            label="Ver mais Trabalhaos"
-            variant="text"
-            targetId="VerMaisTrabalhos"
-            /> 
-        </Styled.ListaLink>
+        <Button
+          label="Desenvolvimento Web"
+          variant="text"
+          targetId="DesenvolvimentoWeb"
+          onClick={handleCloseMenuWithDelay}
+        />
+        <Button
+          label="Design UX/UI"
+          variant="text"
+          targetId="Design"
+          onClick={handleCloseMenuWithDelay}
+        />
+        <Button
+          label="Ver mais Trabalhaos"
+          variant="text"
+          targetId="VerMaisTrabalhos"
+          onClick={handleCloseMenuWithDelay}
+        />
+      </Styled.ListaLink>
     </Styled.Container>
-  )
+  );
 }

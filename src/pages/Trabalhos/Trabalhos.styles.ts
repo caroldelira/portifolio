@@ -5,15 +5,16 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
 
-  height: 1680px;
+  margin-top: 40px;
+
+  height: 1600px;
 
   @media only screen and (max-width: 768px) {
    height: 100%;
    margin-top: 20px;
 
    #imgPage {
-     width: 100%;
-     position: absolute;
+     display: none;
    }
   }
 `
@@ -54,7 +55,7 @@ export const H3S = styled.h3`
 `
 export const ContentDev = styled.div`
   width: 100%;
-  height: 130%;
+  height: 730px;
   margin-top: 40px;
 
   position: absolute;
@@ -65,12 +66,12 @@ export const ContentDev = styled.div`
 `
 export const ContentDes = styled.div`
   width: 100%;
-  height: 730px;
-  margin-top: 800px;
+  margin-top: 750px;
   
   position: absolute;
 
   @media only screen and (max-width: 768px) {
     position: relative;
+    margin-top: 500px;
   }
 `

@@ -21,7 +21,7 @@ export const ListaLink = styled.div<MenuProps>`
     flex-direction: column;
     margin-right: 0px;
     margin-top: 25px;
-    gap: 0px;
+    gap: 10px;
     display: ${({mobileMenu}) => mobileMenu ? 'flex' : 'none' }
   }
 `
