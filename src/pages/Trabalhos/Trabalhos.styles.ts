@@ -52,11 +52,22 @@ export const H3S = styled.h3`
    font-size: 26px;
   }
 `
-export const Content = styled.div`
+export const ContentDev = styled.div`
   width: 100%;
-  height: 100%;
+  height: 130%;
   margin-top: 40px;
 
+  position: absolute;
+
+  @media only screen and (max-width: 768px) {
+    position: relative;
+  }
+`
+export const ContentDes = styled.div`
+  width: 100%;
+  height: 730px;
+  margin-top: 800px;
+  
   position: absolute;
 
   @media only screen and (max-width: 768px) {

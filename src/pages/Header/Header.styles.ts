@@ -1,7 +1,11 @@
 import styled from 'styled-components'
 
+interface MenuProps {
+  mobileMenu: boolean;
+}
 
-export const Container = styled.div`
+
+export const Container = styled.nav<MenuProps>`
   position: fixed;
   top: 0;
   right: 0;
@@ -22,18 +26,14 @@ export const Container = styled.div`
 
   z-index: 1000;
 
+  
   @media only screen and (max-width: 768px) {
-   /*  padding: 0 20px;
-    height: 400px;
-    background: rgba(36, 36, 36, 0.8);
-
-    &img {
-      width: 40px;
-    } */
-
-    display: none;
+    flex-direction: column;
+    justify-content: center;
+    height: ${({ mobileMenu }) => mobileMenu ? '300px' : '70px' };
+    padding-bottom: 0px;
+    margin-top: ${({ mobileMenu }) => mobileMenu ? '-50px' : '0px' };
   }
-
 `
 
 export const ListaLink = styled.div`
@@ -43,22 +43,21 @@ export const ListaLink = styled.div`
   margin-right: 100px;
   gap: 20px;
   font-size: 14px;
-
-  @media only screen and (max-width: 768px) {
-    display: none;
-  }
 `
 
-export const MenuIcon = styled.div`
+export const MenuIcon = styled.div<MenuProps>`
   display: none;
 
   @media only screen and (max-width: 768px) {
-/*     display: flex;
-    justify-content: center;
+    display: ${({ mobileMenu }) => mobileMenu ? 'none' : 'flex' };
     flex-direction: column;
-    cursor: pointer;
-    padding: 10px; */
-    display: none;
+    align-items: flex-end;
+    width: 100%;
+
+    img {
+      height: 38px;
+      cursor: pointer;
+    }
   }
 `;
 
@@ -67,10 +66,27 @@ export const ContainerHeader = styled.div`
   justify-content: space-between;
   width: 100%;
 
-    img {
-    width: 40px;
+  @media only screen and (max-width: 768px) {
+    justify-content: center;
+  }
+
+  img {
+    width: 90px;
     margin-left: 50px;
-    margin-top: 20px;
+    margin-top: 40px;
+
+    @media only screen and (max-width: 768px) {
+      width: 90px;
+      margin-left: 0px;
+      margin-top: 0px;
+      width: 100%;
+    }
+  }
+
+  #logo {
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
   }
 
 `

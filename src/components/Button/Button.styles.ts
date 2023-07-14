@@ -46,7 +46,7 @@ export const Button = styled.button<ButtonProps>`
 
   height: 100%;
   
-  padding: 0px 10px;
+  padding: 6px 16px;
   margin-top: 20px;
 
   ${({ variant }) => variantCss[variant]}
@@ -55,5 +55,7 @@ export const Button = styled.button<ButtonProps>`
 
     margin-top: 10px;
     font-size: 14px;
+    padding: 4px 10px;
   }
+  
 `
