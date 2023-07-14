@@ -4,12 +4,14 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 600px;
+  height: 450px;
   width: 100%;
+  margin-top: 70px;
 
   @media only screen and (max-width: 768px) {
     flex-direction: column;
     max-height: 630px;
+    margin-top: 60px;
   }
 `
 export const ImgContainer = styled.div`
@@ -65,7 +67,7 @@ export const H1 = styled.h1`
 
 export const H2Pink = styled.h2`
   text-align: center;
-  font-size: 40px;
+  font-size: 35px;
   font-family: 'Ubuntu';
   font-weight: 300;
   background-image: var(--linear-pink);
@@ -75,12 +77,12 @@ export const H2Pink = styled.h2`
   color: black;
 
   @media only screen and (max-width: 768px) {
-    font-size: 35px;
+    font-size: 30px;
   }
 `
 export const H2Yellow = styled.h2`
   text-align: center;
-  font-size: 40px;
+  font-size: 35px;
   font-family: 'Ubuntu';
   font-weight: 300;
   background-image: var(--linear-yellow);
@@ -90,7 +92,7 @@ export const H2Yellow = styled.h2`
   color: black;
 
   @media only screen and (max-width: 768px) {
-    font-size: 35px;
+    font-size: 30px;
   }
 `
 
@@ -113,6 +115,6 @@ export const ContentButton = styled.div`
   justify-content: center;
   
   @media only screen and (max-width: 768px) {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
 `

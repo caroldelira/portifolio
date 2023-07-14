@@ -16,7 +16,7 @@ export function Trabalhos() {
     <Styled.Container id="PaginaTrabalhos">
       <img id="imgPage" src={arrowBG} alt="" />
 
-      <Styled.Content id="DesenvolvimentoWeb">
+      <Styled.ContentDev id="DesenvolvimentoWeb">
         <Styled.H3>Desenvolvimento Web</Styled.H3>
 
         {isMobile ? (
@@ -24,7 +24,9 @@ export function Trabalhos() {
         ) : (
           <Carousel projects={projetosDev} />
         )}
+      </Styled.ContentDev>
 
+      <Styled.ContentDes id="Design">
         <Styled.H3S>Design UX/UI</Styled.H3S>
 
         {isMobile ? (
@@ -32,8 +34,7 @@ export function Trabalhos() {
         ) : (
           <Carousel projects={projetosDes} />
         )}
-      </Styled.Content>
-      <div id="Design"></div>
+      </Styled.ContentDes>
     </Styled.Container>
   );
 }
