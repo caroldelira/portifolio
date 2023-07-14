@@ -16,6 +16,7 @@ export function Header({ menuOpen }: HeaderProps) {
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
+    menuOpen
   };
 
   console.log(mobileMenuOpen, 'header')
