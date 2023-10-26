@@ -1,0 +1,24 @@
+image: node:latest
+
+stages:
+  - build
+  - deploy
+
+cache:
+  path:
+    - node_modules
+
+build:
+  stage: build
+  script:
+    - npm install
+    - npm run build
+  artifacts:
+    - path:
+        - build/
+
+deploy:
+  stage: deploy
+  scrupt:
+    - npm install -g netlify-cli
+    - netlify deploy --dir=build --prod --auth=$NETLIFY_TOKEN
