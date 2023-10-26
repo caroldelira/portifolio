@@ -1,12 +1,24 @@
 image: node:latest
 
 stages:
+- test
+
   - build
   - deploy
 
 cache:
   path:
     - node_modules
+
+lint:
+  stage: test
+  script:
+    - npm run lint
+
+unit_teste:
+  stage: test
+  script:
+    - npm run test
 
 build:
   stage: build
