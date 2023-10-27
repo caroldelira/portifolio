@@ -10,7 +10,8 @@ cache:
   path:
     - node_modules
 
-lint:
+lint_test:
+
   stage: test
   script:
     - npm run lint
