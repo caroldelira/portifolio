@@ -1,0 +1,1 @@
+export { Organizi } from './Organizi';

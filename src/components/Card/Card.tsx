@@ -1,35 +1,37 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom'
+
 import * as Styled from './Card.styles';
 
-interface CardProps {
+export interface CardProps {
   id: string;
   imageCard: string;
   imageLogo: string[];
   titulo: string;
-  redeSocial: string;
+  link: string;
   desc: string;
   tecnology: string[];
   descTec: string[];
-  link: string;
   color: 'blue' | 'green' | 'yellow' | 'pink' | 'orange';
   design?: boolean;
   descDesign?: string;
+  buttonLink: boolean;
 }
 
 export function Card({
   imageCard,
   imageLogo,
   titulo,
-  redeSocial,
+  link,
   desc,
   descTec,
   tecnology,
-  link,
   color,
   design,
   descDesign,
   id,
+  buttonLink,
 }: CardProps) {
   return (
     <Styled.Container id={id} color={color}>
@@ -46,11 +48,8 @@ export function Card({
       <Styled.TextContainer color={color}>
         <h4>
           {titulo}{' '}
-          <Styled.Link color={color} href={link} target="_blank">
-            (Acessar {redeSocial})
-          </Styled.Link>
         </h4>
-        <p>{desc}</p>
+        <Styled.P>{desc}</Styled.P>
         <p>Tecnologias utilizadas:</p>
         <ul>
           {tecnology.map((tech, index) => (
@@ -64,11 +63,17 @@ export function Card({
           <>
             <p>Funcionalidades:</p>
             <ul>
-              <Styled.li color={color}>{descDesign}</Styled.li>
+              <Styled.Li color={color}>{descDesign}</Styled.Li>
             </ul>
           </>
         ) : null}
       </Styled.TextContainer>
+      {buttonLink === true &&
+        <Styled.ContainerButton>
+          <Link to={`${link}`}>Ver mais</Link>
+        </Styled.ContainerButton>
+      }
+
     </Styled.Container>
   )
 }

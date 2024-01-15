@@ -147,7 +147,27 @@ export const Link = styled.a<CardProps>`
   }
 `
 
-export const li = styled.li<CardProps>`
+export const Li = styled.li<CardProps>`
   list-style: none;
   color: ${(({color}) => colors[color])};
 `
+
+export const P = styled.p`
+  height: 130px;
+`;
+
+export const ContainerButton = styled.div`
+  padding-top: 10px;
+
+  a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    transition: color 0.6s; ease-in-out;
+
+    :hover {
+      color: var(--blue);
+      
+    }
+  }
+`;

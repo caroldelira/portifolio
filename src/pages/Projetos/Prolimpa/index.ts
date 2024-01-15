@@ -1,0 +1,1 @@
+export { Prolimpa } from './Prolimpa';

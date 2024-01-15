@@ -38,7 +38,6 @@ export const H3S = styled.h3`
   text-align: center;
   font-size: 35px;
   
-  margin-top: 100px;
   margin-bottom: 40px;
   
   background-image: var(--linear-yellow);
@@ -66,7 +65,7 @@ export const ContentDev = styled.div`
 export const ContentDes = styled.div`
   width: 100%;
   height: 730px;
-  margin-top: 800px;
+  margin-top: 900px;
   
   position: absolute;
 

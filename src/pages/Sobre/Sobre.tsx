@@ -29,29 +29,18 @@ export function Sobre() {
           paixão, dedicação e compromisso com a programação e o design. Minhas
           principais tecnologias utilizadas são:{' '}
           <b>
-            <i>React.js</i>
+            <i>React</i>
           </b>
           ,{' '}
           <b>
-            <i>TypeScript</i>
+            <i>WordPress</i>
           </b>
-          ,{' '}
-          <b>
-            <i>JavaScript</i>
-          </b>
-          ,{' '}
-          <b>
-            <i>Styled-componentes</i>
-          </b>
-          ,{' '}
-          <b>
-            <i>git</i>
-          </b>{' '}
-          e{' '}
+          {' '} e {' '}
           <b>
             <i>Figma</i>
           </b>
-          .
+          . <br /> <br />
+          No meu trabalho com WordPress e no-code, eu aproveito bastante a liberdade que tenho de usar o CSS. É mais do que só montar um projeto: é sobre usar a facilidade do no-code e, ao mesmo tempo, colocar um toque pessoal com código personalizado. Gosto muito de trabalhar essa mistura do prático com o único, onde cada detalhe reflete um pouco do meu estilo e atende as necessidades do usuário de um jeito bem criativo.
         </p>
       </Styled.Content>
       <Styled.IMG>
