@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import logoLinkedin from '../../image/logos/logo-linkedIn.png';
+import logoLinkedin from '../../image/logos/logo-linkedin.png';
 import menu from '../../image/icones/menu.svg';
 
 import { Menu } from '../../components/Menu';
