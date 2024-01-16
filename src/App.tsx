@@ -27,13 +27,13 @@ export function App() {
             <Sobre />
             <Trabalhos />
             <Contatos />
-            <Footer />
           </>
         }>
         </Route>
         <Route path='/projetoOrganizi' element={<Organizi />} />
         <Route path='/projetoProlimpa' element={<Prolimpa />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
