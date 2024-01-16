@@ -59,7 +59,7 @@ export const ContentDev = styled.div`
   position: absolute;
 
   @media only screen and (max-width: 768px) {
- 
+  position: relative;
   }
 `
 export const ContentDes = styled.div`
