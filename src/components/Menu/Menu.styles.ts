@@ -28,17 +28,23 @@ export const ListaLink = styled.div<MenuProps>`
     padding: 6px 16px;
 
     :hover {
-      color: var(--blue);
-      
+      color: var(--blue); 
     }
+  }
 
   @media only screen and (max-width: 768px) {
     flex-direction: column;
     margin-right: 0px;
     margin-top: 25px;
     gap: 0px;
+
+    a {
+      display: flex;
+      font-size: 14px;
+      justify-content: center;
+    }
     
-    display: ${({mobileMenu}) => mobileMenu ? 'flex' : 'none' }
+    display: ${({mobileMenu}) => mobileMenu ? 'flex' : 'none' };
   }
 `;
 
