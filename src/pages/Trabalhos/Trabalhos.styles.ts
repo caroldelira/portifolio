@@ -64,7 +64,7 @@ export const ContentDev = styled.div`
 `
 export const ContentDes = styled.div`
   width: 100%;
-  height: 730px;
+  height: 840px;
   margin-top: 900px;
   
   position: absolute;

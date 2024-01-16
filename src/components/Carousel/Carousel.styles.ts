@@ -2,9 +2,19 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .swiper {
+    width: 60%;
+    height: 730px;
+    margin-bottom: 10px;
+  }
+
+  .swiper-pagination {
+    margin-bottom: -10px;
+  }
 `;
 
 export const ContainerCards = styled.div`

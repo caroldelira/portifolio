@@ -18,13 +18,16 @@ export const Container = styled.div<CardProps>`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
 
   position: relative;
 
-  width: 480px;
-  height: ${(() => `design ? 550px : 630px`)};
-  padding: 16px;
+  background: var(--gray-900);
 
+  width: 480px;
+  height: 700px;
+  
+  padding: 16px;
   margin: 10px;
 
   border: 1px solid ${(({color}) => colors[color])};
@@ -35,7 +38,7 @@ export const Container = styled.div<CardProps>`
 
   &:hover {
     box-shadow: 0 0 10px ${(({ color }) => colors[color])};
-    background: rgba(0, 0, 0, 0.07);
+    background: var(--gray-900);
     transform: scale(1.01);
   }
 
