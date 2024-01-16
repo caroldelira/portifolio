@@ -1,1 +1,1 @@
-export { Trabalhos } from './Trabalhos'
+export { Trabalhos } from './Trabalhos';

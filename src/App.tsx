@@ -19,7 +19,7 @@ export function App() {
   return (
     <Router>
       <GlobalStyles />
-      <Header menuOpen />
+      <Header />
       <Routes>
         <Route path='/' element={
           <>

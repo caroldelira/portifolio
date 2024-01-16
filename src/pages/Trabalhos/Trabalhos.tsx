@@ -24,7 +24,6 @@ export function Trabalhos() {
         ) : (
           <Carousel projects={projetosDev} />
         )}
-      
       </Styled.ContentDev>
 
       <Styled.ContentDes id="Design">

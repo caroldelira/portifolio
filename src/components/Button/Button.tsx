@@ -7,6 +7,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   targetId?: string;
   variant: 'text' | 'default';
   children?: ReactNode;
+  onClick?: () => void;
 }
 
 export function Button({
@@ -14,6 +15,7 @@ export function Button({
   targetId,
   variant,
   children,
+  onClick,
   ...props
 }: ButtonProps) {
   const handleClick = () => {
@@ -28,8 +30,17 @@ export function Button({
     }
   };
 
+  const handleButtonWithDelay = () => {
+    handleClick();
+    if (onClick) {
+      setTimeout(() => {
+        onClick();
+      }, 650);
+    }
+  };
+
   return (
-    <Styled.Button variant={variant} onClick={handleClick} {...props}>
+    <Styled.Button variant={variant} onClick={handleButtonWithDelay} {...props}>
       {label}
       {children}
     </Styled.Button>

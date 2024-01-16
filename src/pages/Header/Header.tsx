@@ -1,31 +1,28 @@
 import React, { useState } from 'react';
 
-import logoLinkedin from '../../image/logos/logo-linkedIn.png';
+import logoLinkedin from '../../image/logos/logo-linkedin.png';
 import menu from '../../image/icones/menu.svg';
 
 import { Menu } from '../../components/Menu';
 
 import * as Styled from './Header.styles';
 
-interface HeaderProps {
-  menuOpen: boolean;
-}
-
-export function Header({ menuOpen }: HeaderProps) {
+export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
-    menuOpen
   };
 
-  console.log(mobileMenuOpen, 'header')
-
   return (
-    <Styled.Container mobileMenu={mobileMenuOpen} id="Header">
-      <Styled.ContainerHeader>
+    <Styled.Container
+      mobileMenu={mobileMenuOpen}
+      id="Header"
+      className={mobileMenuOpen ? 'isOpen' : 'notOpen'}
+    >
+      <Styled.ContainerHeader mobileMenu={mobileMenuOpen}>
         <a
-          id='logo'
+          id="logo"
           href="https://www.linkedin.com/in/ana-carolina-vasconcelos-510739183/"
           target="_blank"
           rel="noreferrer"

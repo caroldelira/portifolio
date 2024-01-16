@@ -4,7 +4,8 @@ interface MenuProps {
   mobileMenu: boolean;
 }
 
-export const Container = styled.div<MenuProps>`
+
+export const Container = styled.div`
 
 `
 
@@ -36,17 +37,10 @@ export const ListaLink = styled.div<MenuProps>`
     margin-right: 0px;
     margin-top: 25px;
     gap: 0px;
-
-    a {
-      flex-direction: column;
-      margin-right: 0px;
-      margin-top: 25px;
-      gap: 0px;
-    }
     
     display: ${({mobileMenu}) => mobileMenu ? 'flex' : 'none' }
   }
-`
+`;
 
 export const MenuIcon = styled.div<MenuProps>`
   display: none;

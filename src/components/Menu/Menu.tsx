@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { Button } from '../../components/Button';
@@ -12,38 +12,39 @@ interface MenuProps {
   mobileMenuOpen: boolean;
 }
 
-export function Menu({mobileMenuOpen, toggleMenu}: MenuProps) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleButtonClick = () => {
-    setIsOpen(!isOpen);
+export function Menu({ mobileMenuOpen, toggleMenu }: MenuProps) {
+  const handleCloseMenuWithDelay = () => {
     toggleMenu();
   };
 
-  console.log(isOpen, 'menu')
-
   return (
-    <Styled.Container mobileMenu={mobileMenuOpen}>
+    <Styled.Container>
       <Styled.MenuIcon mobileMenu={mobileMenuOpen}>
-        <img src={close} alt="" onClick={handleButtonClick} />
+        <img src={close} alt="" onClick={toggleMenu} />
       </Styled.MenuIcon>
 
       <Styled.ListaLink mobileMenu={mobileMenuOpen}>
- 
-          <Link to={`/`}>Início</Link>
+        <Link to={`/`}>Início</Link>
 
-          <Button
-            label="Desenvolvimento Web"
-            variant="text"
-            targetId="DesenvolvimentoWeb"
-          />
-          <Button label="Design UX/UI" variant="text" targetId="Design" />
-          <Button
-            label="Ver mais Trabalhaos"
-            variant="text"
-            targetId="VerMaisTrabalhos"
-            /> 
-        </Styled.ListaLink>
+        <Button
+          label="Desenvolvimento Web"
+          variant="text"
+          targetId="DesenvolvimentoWeb"
+          onClick={handleCloseMenuWithDelay}
+        />
+        <Button
+          label="Design UX/UI"
+          variant="text"
+          targetId="Design"
+          onClick={handleCloseMenuWithDelay}
+        />
+        <Button
+          label="Ver mais Trabalhaos"
+          variant="text"
+          targetId="VerMaisTrabalhos"
+          onClick={handleCloseMenuWithDelay}
+        />
+      </Styled.ListaLink>
     </Styled.Container>
-  )
+  );
 }

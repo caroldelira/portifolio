@@ -4,14 +4,13 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 450px;
+  height: 500px;
   width: 100%;
   margin-top: 70px;
 
   @media only screen and (max-width: 768px) {
     flex-direction: column;
-    max-height: 630px;
-    margin-top: 60px;
+    height: 650px;
   }
 `
 export const ImgContainer = styled.div`
@@ -115,6 +114,6 @@ export const ContentButton = styled.div`
   justify-content: center;
   
   @media only screen and (max-width: 768px) {
-    margin-bottom: 100px;
+    margin-bottom: 130px;
   }
 `
