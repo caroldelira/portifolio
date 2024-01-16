@@ -3,10 +3,10 @@ import React, { ReactNode, useState } from 'react';
 import buttonRight from '../../image/carouselRight.svg';
 import buttonLeft from '../../image/caroulseLeft.svg';
 
-import { CardProps } from '../../models/projetosDev';
-
 import { Button } from '../Button/Button';
+
 import { Card } from '../Card';
+import { CardProps } from '../Card/Card';
 
 import * as Styled from './Carousel.styles';
 
@@ -52,9 +52,9 @@ export function Carousel({ projects, id }: CarouselProps) {
             imageCard={card.imageCard}
             imageLogo={card.imageLogo}
             link={card.link}
-            redeSocial={card.redeSocial}
             tecnology={card.tecnology}
             titulo={card.titulo}
+            buttonLink={card.buttonLink}
           />
         ))}
       </Styled.ContainerCards>

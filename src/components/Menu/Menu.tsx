@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import { Button } from '../../components/Button';
 
 import close from '../../image/icones/close.svg';
@@ -22,12 +24,8 @@ export function Menu({ mobileMenuOpen, toggleMenu }: MenuProps) {
       </Styled.MenuIcon>
 
       <Styled.ListaLink mobileMenu={mobileMenuOpen}>
-        <Button
-          label="Início"
-          variant="text"
-          targetId="Header"
-          onClick={handleCloseMenuWithDelay}
-        />
+        <Link to={`/`}>Início</Link>
+
         <Button
           label="Desenvolvimento Web"
           variant="text"

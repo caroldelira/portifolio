@@ -17,7 +17,7 @@ export function Footer() {
         <img src={arrow} alt="" />
       </Styled.IMG>
       <div>
-        <p>&copy; 2023 Caroldelira</p>
+        <p>Design e Desenvolvimento feito por <b>Caroldelira</b></p>
       </div>
       <Styled.Contatos>
         <a
