@@ -6,10 +6,8 @@ import * as Styled from './Organizi.styles';
 
 export function Organizi() {
   return (
-
-    <Styled.Container>
-      <img src={projetoOrganizi} />
+  <Styled.Container>
+    <img src={projetoOrganizi} />
   </Styled.Container>
-
   )
 }
